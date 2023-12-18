@@ -12,7 +12,7 @@ try {
 
     foreach ($equipes as $equipe) {
         // Affichage du nom de l'équipe
-        echo "Nom de l'équipe: " . htmlspecialchars($equipe['nom_equipe']) . "<br>";
+        echo " " . htmlspecialchars($equipe['nom_equipe']) . "<br>";
 
         // Récupération et affichage des joueurs de l'équipe
         $stmtJoueurs = $conn->prepare("SELECT * FROM Participant WHERE id_equipe = :idEquipe");
