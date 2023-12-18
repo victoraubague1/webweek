@@ -1,0 +1,189 @@
+
+
+
+.navbar {
+    background-color: #182972;
+
+    height: 80px;
+    font-size: larger;
+}
+
+
+
+.navbar-brand {
+
+    color: #b1b1b1;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+
+/* Cibler les liens de navigation pour ajuster l'espacement */
+.navbar-nav .nav-item  {
+    margin-left: 5%; /* Espacement à gauche de chaque lien */
+    margin-right: 5%; /* Espacement à droite de chaque lien */
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 699;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #c58686;
+}
+.logo {
+    width: 50px; /* Largeur du logo */
+    height: 50px; /* Hauteur du logo */
+    transition: opacity 0.3s ease; /* Transition douce pour l'opacité */
+    content: url('https://logowik.com/content/uploads/images/863_louis_vuitton.jpg'); /* Changez l'image du logo au survol ici */
+  }
+  
+  .logo:hover {
+    content: url('https://sothebys-md.brightspotcdn.com/dims4/default/29b58a0/2147483647/strip/true/crop/2000x2000+0+0/resize/385x385!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F7e%2Fb9%2Fd2b6288a4a2b86b72e75ded01e35%2F730sneakers-c7drw-t3-04.jpg'); /* Changez l'image du logo au survol ici */
+  }
+  
+
+@media (min-width: 991px) {
+
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #204716;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+   
+}
+ .php{
+    margin-top: 15vh;
+    margin-left: 10vh;
+    margin-right: 10vh
+ }
+.card img{
+    height: 100%;
+    width: 100%;
+}
+
+.max-width-50 {
+    max-width: 50%;
+    margin: auto; /* This will center the table */
+}
+.jumbotron-custom {
+    background: url('/webweek/img/dalle.png') no-repeat center center;
+    background-size: cover;
+    height: 120vh ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-top: 80px; /* Padding égal à la hauteur de la navbar */
+    /* Pas besoin de margin-top négatif ici */
+}
+
+
+
+/* Style du conteneur de texte */
+.text-background {
+   
+
+
+    margin-top: 9%;
+    text-align: left; 
+    max-width: 30%; /* Largeur maximale du conteneur de texte pour le garder concis */
+    position: absolute; /* Positionnement absolu pour permettre un contrôle précis */
+    left: 3.5%; /* Espacement depuis la gauche de l'écran */
+}
+
+/* Style du titre */
+.text-background h1 {
+    background-color: hsla(240, 62%, 36%, 0.82); /* Couleur de fond avec opacité */
+    padding: 0.5em 1em; /* Espacement autour du texte */
+    border-radius: 0.25em; /* Coins arrondis */
+    margin-bottom: 0.5em; /* Espacement entre le titre et le sous-titre */
+    display: inline-block; /* Permettre le fond de s'adapter au texte */
+    font-size: 2.5em; /* Taille du texte réduite, ajustez ceci comme nécessaire */
+}
+
+
+/* Style du sous-titre (lead) */
+.text-background .lead {
+    font-size: larger;
+    background-color: hsla(240, 62%, 36%, 0.82);
+    padding: 0.5em 1em; /* Espacement autour du texte */
+    border-radius: 0.25em; /* Coins arrondis */
+    display: inline-block; /* Permettre le fond de s'adapter au texte */
+    
+}
+@media (max-width: 768px) {
+    .jumbotron-custom {
+        margin-top: 60px; /* Marge supérieure plus petite */
+        height: 40vh; /* Hauteur plus petite pour le jumbotron */
+    }
+
+    .text-background {
+  
+        left: 10%; /* Moins d'espace sur les côtés pour les petits écrans */
+        transform: translate(-10%, -50%);
+        width: 80%; /* Largeur plus grande pour le texte sur les petits écrans */
+    }
+
+    .text-background h1, .text-background .lead {
+        display: block; /* Chaque élément prend toute la largeur */
+        padding: 0.5em; /* Moins de padding sur les petits écrans */
+        font-size: smaller; /* Police plus petite sur les petits écrans */
+    }
+}
+.evenement1{
+    background-color: #182972;
+
+margin-bottom: 2vh;
+    
+}
+.evenement2{
+    background-color: #5b71d1 ;
+ 
+}
+.custom-card {
+    
+    background-color: #182972;
+    color : white ;
+    text-align: center;
+    /* Vous pouvez ajouter d'autres styles ici si nécessaire */
+
+}
+
+.card-title{
+
+    text-align: center;
+}
+.ahah {
+    margin-top: 80px;
+    
+
+}
