@@ -148,7 +148,7 @@ try {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
           crossorigin="anonymous">
-    <title>Résultats des Matchs</title>
+    <title>Resultats des Matchs</title>
 </head>
 <body>
 <div class="container half-width-container mt-6">
@@ -214,7 +214,7 @@ try {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
           crossorigin="anonymous">
-    <title>Classement des Équipes</title>
+    <title>Classement des Equipes</title>
 </head>
 <body>
 <div class="container half-width-container mt-6">

@@ -23,14 +23,12 @@ h2{
 }
 
 
-/* ************************************************** navbar *************************************************** */
+/* css pr la navbar */
 .navbar {
     background-color: #182972;
     height: 100px;
     font-size: larger;
 }
-
-
 
 .navbar-brand {
 
@@ -69,17 +67,16 @@ h2{
 .nav-link:hover, .nav-link.active {
     color: #6a89b4;
 }
-/* Logo  */
 .logo {
     width: 80px; 
-    height: 80px;
-    transition: opacity 0.3s ease; /* Transition pour l'opacité */
-    content: url('../img/logo.png');
+    height: 80px; /* Hauteur du logo */
+    transition: opacity 0.3s ease; /* Transition douce pour l'opacité */
+    content: url('../img/logo.png'); /* Changez l'image du logo au survol ici */
   }
-
-.logo:hover{
-    transform: scale(1.1);
-}
+  
+  .logo:hover {
+    content: url('https://sothebys-md.brightspotcdn.com/dims4/default/29b58a0/2147483647/strip/true/crop/2000x2000+0+0/resize/385x385!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F7e%2Fb9%2Fd2b6288a4a2b86b72e75ded01e35%2F730sneakers-c7drw-t3-04.jpg'); /* Changez l'image du logo au survol ici */
+  }
   
 /* css pour la navbar responsive */
 @media (min-width: 991px) {
@@ -103,23 +100,20 @@ h2{
     }
    
 }
-/* pr un espacement dans le code  */
- .php{
-    margin-top: 15vh;
-    margin-left: 10vh;
-    margin-right: 10vh
- }
 
+/* ************************************************* PAGE EQUIPE *************************************************** */
  /* pour les cartes des joueurs */
 .card img{
     height: 100%;
     width: 100%;
 }
-/* pr la taille */
+/* pour la taille */
 .max-width-50 {
     max-width: 50%;
     margin: auto; 
 }
+
+/* *************************************************** PAGE D ACCUEIL************************************************ */
 
 /* image de la page d'accueil*/
 .jumbotron-custom {
@@ -135,61 +129,85 @@ h2{
     padding-top: 80px; 
 }
 
-
-
-/* Style du conteneur de texte pr la page d'accueil */
+/* Style du conteneur de texte sur l'image de la page d'accueil */
 .text-background {
-   
-
-
     margin-top: 9%;
     text-align: left; 
-    max-width: 30%; /* Largeur maximale du conteneur de texte pour le garder concis */
-    position: absolute; /* Positionnement absolu pour permettre un contrôle précis */
-    left: 3.5%; /* Espacement depuis la gauche de l'écran */
+    max-width: 30%; 
+    position: absolute; 
+    left: 3.5%; 
 }
 
-/* Style du titre */
+/* Style du titre sur l'image */
 .text-background h1 {
-    background-color: hsla(240, 62%, 36%, 0.82); /* Couleur de fond avec opacité */
-    padding: 0.5em 1em; /* Espacement autour du texte */
-    border-radius: 0.25em; /* Coins arrondis */
-    margin-bottom: 0.5em; /* Espacement entre le titre et le sous-titre */
-    display: inline-block; /* Permettre le fond de s'adapter au texte */
-    font-size: 2.5em; /* Taille du texte réduite, ajustez ceci comme nécessaire */
+    background-color: hsla(240, 62%, 36%, 0.82); 
+    padding: 0.5em 1em; 
+    border-radius: 0.25em; 
+    margin-bottom: 0.5em; 
+    display: inline-block; 
+    font-size: 2.5em;
 }
 
 
-/* Style du sous-titre (lead) */
+/* Sous-titre (lead) */
+
 .text-background .lead {
     font-size: larger;
     background-color: hsla(240, 62%, 36%, 0.82);
-    padding: 0.5em 1em; /* Espacement autour du texte */
-    border-radius: 0.25em; /* Coins arrondis */
-    display: inline-block; /* Permettre le fond de s'adapter au texte */
+    padding: 0.5em 1em; 
+    border-radius: 0.25em; 
+    display: inline-block; 
     
 }
+
+
+/* information*/
+.icon {
+    width: 40%;
+    color: #ffffff;
+    padding: 0px;
+
+  }
+  
+  .explication-titre {
+    font-size: 26px;
+    color: #ffffff;
+
+  }
+  
+  .explication-text {
+    font-size: 18px;
+    padding-top: 20px;
+    color: #ffffff;
+    margin-bottom: 5vh;
+  }
+
+.carousel-image {
+    height: 50vh;
+    width: 50vh;
+    }
+
+/* Responsive */
 @media (max-width: 768px) {
     .jumbotron-custom {
         margin-top: 60px; /* Marge supérieure plus petite */
-        height: 40vh; /* Hauteur plus petite pour le jumbotron */
+        height: 40vh; 
     }
 
     .text-background {
-  
         left: 10%; /* Moins d'espace sur les côtés pour les petits écrans */
         transform: translate(-10%, -50%);
         width: 80%; /* Largeur plus grande pour le texte sur les petits écrans */
     }
 
     .text-background h1, .text-background .lead {
-        display: block; /* Chaque élément prend toute la largeur */
-        padding: 0.5em; /* Moins de padding sur les petits écrans */
+        display: block; 
+        padding: 0.5em; 
         font-size: smaller; /* Police plus petite sur les petits écrans */
     }
 }
 
-  /*c pr la landing page */
+/* ********************************************* PAGE ADMIN ********************************************************* */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
@@ -209,8 +227,6 @@ h2{
   
     font-family: 'Poppins', sans-serif;
 }
-
-
 
 .containerform {
     height: 100vh;
@@ -232,9 +248,6 @@ h2{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
     transition: all .6s ease-in;
 }
-
-
-
 
 .forms.show__signup .form.connexion {
     opacity: 0;
@@ -312,6 +325,9 @@ form {
 
 
 
+
+
+
 @media screen and (max-width:400px) {
     .form {
         padding: 15px 10px;
@@ -346,8 +362,8 @@ width: 50vh;
     margin-bottom: 5vh;
   }
 
-/* *************************************************PAGE TARIF*************************************************** */
-  /* cartes */
+/* *********************************PAGE TARIF****************************************** */
+  /* css pr les cartes dans la page tarif */
   #itamsection {
     background-color: #f8f9fa;
     padding: 40px 0;
@@ -430,6 +446,9 @@ width: 50vh;
     padding-right:1% ;
     font-size: 25px;
     font-family: "Koulen";
+    font-size: 25px;
+    height: 50px;
+    width: 300px;
 }
 
 .btn-inscription:hover{
@@ -437,6 +456,7 @@ width: 50vh;
     color: #FFF;
 }
 
+/* **************************************** PAGE PARTENAIRES ******************************************************* */
 /* test pr les partenaire */
 
 
@@ -458,4 +478,3 @@ width: 50vh;
   .carousel-item{
 height: 300px;
   }
-
