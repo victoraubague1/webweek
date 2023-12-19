@@ -142,7 +142,7 @@
             <input type="file" id="photo" name="photo" accept="image/png, image/jpeg">
         </div>
         <div class="form-group text-center mx-auto">
-            <input type="number" id="id_equipe" name="id_equipe" required placeholder="id-equipe">
+            <input type="number" id="id_equipe" name="id_equipe" required placeholder="Id-equipe">
         </div>
         <input type="submit" class="btn btn-inscription" value="S'INSCRIRE">
     </form>

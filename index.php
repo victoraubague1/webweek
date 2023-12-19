@@ -126,7 +126,7 @@
             <div class="card custom-card">
                 <div class="card-body">
                     <p class="card-text">Le 14 décembre tout au long de la journée. Vous retrouverez la programmation complète ainsi que les horaires.</p>
-                    <a href="#" class="stretched-link">Inscription</a>
+                    <a href="poo/inscription.php" class="stretched-link">Inscription</a>
                 </div>
             </div>
         </div>
