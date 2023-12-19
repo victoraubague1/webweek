@@ -44,10 +44,10 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/php/equipe.php">Equipe</a>
+                            <a class="nav-link mx-lg-2" href="equipe.php">Equipe</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="/php/resultat.php">Classement</a>
+                        <a class="nav-link mx-lg-2" href="resultat.php">Classement</a>
                         </li>
                     </ul>
                 </div>
@@ -152,7 +152,7 @@ try {
 </head>
 <body>
 <div class="container half-width-container mt-6">
-    <h1 class="text-center mt-4">Résultats des Matchs</h1>
+    <h1 class="text-center mt-4">Resultats des Matchs</h1>
     <?php if (!empty($resultats)): ?>
         <table class="table  table-primary table-hover">
             <thead>
@@ -218,7 +218,7 @@ try {
 </head>
 <body>
 <div class="container half-width-container mt-6">
-        <h1 class="text-center">Classement des Équipes</h1>
+        <h1 class="text-center">Classement des Equipes</h1>
         <table class="table table-primary table-hover">
             <thead>
                 <tr>
