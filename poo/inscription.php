@@ -27,18 +27,17 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                     
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                        
+                    <li class="nav-item">
+                     <div class="logo">   </div>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="../poo/inscription.php">Inscription</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="#">Partenaire</a>
                         </li>
-                        <li class="nav-item">
-                     <div class="logo">   </div>
-                        </li>
-                        
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/webweek/php/equipe.php">Equipe</a>
                         </li>
@@ -48,6 +47,7 @@
                     </ul>
                 </div>
             </div>
+
            
             <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
