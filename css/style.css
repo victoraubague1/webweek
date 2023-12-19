@@ -347,9 +347,82 @@ width: 50vh;
     margin-bottom: 5vh;
   }
 
+/* *********************************PAGE TARIF****************************************** */
   /* css pr les cartes dans la page tarif */
-#itamsection .card {
+  #itamsection {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+  }
+
+  .itam {
+    color: #00175E;
+  }
+ #itamsection .card {
     margin-top: 90px; 
+    border-radius: 10px;
+}
+
+.info_programme {
+    text-align: center;
+    padding: 25px;
+}
+
+.button_inscription {
+    width: 300px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #223C7E;
+    color: #FFF;
+    font-family: Koulen;
+    font-size: 25px;
+    margin-top: 1%;
+}
+
+.button_inscription:hover{
+    background: #052175;
+    color: #FFF;
+}
+
+/* Formulaire d'inscription */
+.formulaire_insc {
+    background-color: #A9CAFD;
+    text-align: center;
+    padding: 3%;
+}
+
+.form-group {
+    background-color: #3D5695;
+    border-radius: 35px;
+    margin-top: 15px; 
+    max-width: 800px;
+}
+
+.form-group input{
+    background-color: #3D5695;
+    border: none;
+}
+
+.form-group input::placeholder {
+    color: #ffffff;
+    text-align: center;
+    opacity: 1;
+}
+
+
+.btn-inscription{
+    background-color:#00175E;
+    border: none;
+    border-radius:35px;
+    margin-top: 2%;
+    color: #FFF;
+    padding-left: 1%;
+    padding-right:1% ;
+}
+
+.btn-inscription:hover{
+    background-color:#052175; 
+    color: #FFF;
 }
 
 /* test pr les partenaire */
