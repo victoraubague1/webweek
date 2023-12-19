@@ -11,6 +11,8 @@ body{
     font-size: larger;
 }
 
+
+
 .navbar-brand {
 
     color: #b1b1b1;
@@ -50,7 +52,7 @@ body{
     width: 50px; 
     height: 50px; /* Hauteur du logo */
     transition: opacity 0.3s ease; /* Transition douce pour l'opacité */
-    content: url('../img/logo.png'); /* Changez l'image du logo au survol ici */
+    content: url('https://logowik.com/content/uploads/images/863_louis_vuitton.jpg'); /* Changez l'image du logo au survol ici */
   }
   
   .logo:hover {
@@ -163,28 +165,6 @@ body{
         padding: 0.5em; /* Moins de padding sur les petits écrans */
         font-size: smaller; /* Police plus petite sur les petits écrans */
     }
-}
-/* Deroulement */
-.deroulement {
-    background-color: #A9CAFD; 
-    color: #002596;
-    padding-top: 30px;
-}
-.deroulement h2 {
-    color: #002596; 
-    margin-bottom: 30px; 
-    font-weight: bold;
-}
-.container_horaires {
-    background-color: #A9CAFD; 
-    padding: 20px;
-    border-radius: 8px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
-    text-align: center;
-}
-.horaires h3 {
-    font-size: 25px;
-    font-weight: bold;
 }
 
   /*c pr la landing page */
