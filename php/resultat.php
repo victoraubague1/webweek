@@ -40,10 +40,10 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/webweek/php/equipe.php">Equipe</a>
+                            <a class="nav-link mx-lg-2" href="/php/equipe.php">Equipe</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="/webweek/php/resultat.php">Classement</a>
+                        <a class="nav-link mx-lg-2" href="/php/resultat.php">Classement</a>
                         </li>
                     </ul>
                 </div>
