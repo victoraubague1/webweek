@@ -337,8 +337,13 @@ form {
 
 .carousel-image {
     height: 50vh;
-width: 50vh;
+    width: 50vh;
 }
+  /* carousell */
+  .carousel-item{
+height: 900px;
+width: 100%;
+  }
 
 
 /* information*/
@@ -472,9 +477,3 @@ width: 50vh;
     margin-top: 2vh;
   }
   
-
-
-  /* carousell */
-  .carousel-item{
-height: 300px;
-  }
