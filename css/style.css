@@ -1,0 +1,355 @@
+
+body{
+    background-color: rgb(156, 139, 139);
+}
+
+/* css pr la navbar */
+.navbar {
+    background-color: #182972;
+
+    height: 80px;
+    font-size: larger;
+}
+
+
+
+.navbar-brand {
+
+    color: #b1b1b1;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+
+/* espacement de la navbar */
+.navbar-nav .nav-item  {
+    margin-left: 5%; 
+    margin-right: 5%;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 699;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #c58686;
+}
+.logo {
+    width: 50px; 
+    height: 50px; /* Hauteur du logo */
+    transition: opacity 0.3s ease; /* Transition douce pour l'opacité */
+    content: url('https://logowik.com/content/uploads/images/863_louis_vuitton.jpg'); /* Changez l'image du logo au survol ici */
+  }
+  
+  .logo:hover {
+    content: url('https://sothebys-md.brightspotcdn.com/dims4/default/29b58a0/2147483647/strip/true/crop/2000x2000+0+0/resize/385x385!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F7e%2Fb9%2Fd2b6288a4a2b86b72e75ded01e35%2F730sneakers-c7drw-t3-04.jpg'); /* Changez l'image du logo au survol ici */
+  }
+  
+/* css pr la navbar responsive */
+@media (min-width: 991px) {
+
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #204716;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+   
+}
+/* pr un espacement dans le code  */
+ .php{
+    margin-top: 15vh;
+    margin-left: 10vh;
+    margin-right: 10vh
+ }
+
+ /* pour les cartes des joueurs */
+.card img{
+    height: 100%;
+    width: 100%;
+}
+/* pr la taille */
+.max-width-50 {
+    max-width: 50%;
+    margin: auto; 
+}
+
+/* image de la page d'accueil*/
+.jumbotron-custom {
+    background: url('/webweek/img/dalle.png') no-repeat center center;
+    background-size: cover;
+    height: 120vh ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-top: 80px; 
+}
+
+
+
+/* Style du conteneur de texte pr la page d'accueil */
+.text-background {
+   
+
+
+    margin-top: 9%;
+    text-align: left; 
+    max-width: 30%; /* Largeur maximale du conteneur de texte pour le garder concis */
+    position: absolute; /* Positionnement absolu pour permettre un contrôle précis */
+    left: 3.5%; /* Espacement depuis la gauche de l'écran */
+}
+
+/* Style du titre */
+.text-background h1 {
+    background-color: hsla(240, 62%, 36%, 0.82); /* Couleur de fond avec opacité */
+    padding: 0.5em 1em; /* Espacement autour du texte */
+    border-radius: 0.25em; /* Coins arrondis */
+    margin-bottom: 0.5em; /* Espacement entre le titre et le sous-titre */
+    display: inline-block; /* Permettre le fond de s'adapter au texte */
+    font-size: 2.5em; /* Taille du texte réduite, ajustez ceci comme nécessaire */
+}
+
+
+/* Style du sous-titre (lead) */
+.text-background .lead {
+    font-size: larger;
+    background-color: hsla(240, 62%, 36%, 0.82);
+    padding: 0.5em 1em; /* Espacement autour du texte */
+    border-radius: 0.25em; /* Coins arrondis */
+    display: inline-block; /* Permettre le fond de s'adapter au texte */
+    
+}
+@media (max-width: 768px) {
+    .jumbotron-custom {
+        margin-top: 60px; /* Marge supérieure plus petite */
+        height: 40vh; /* Hauteur plus petite pour le jumbotron */
+    }
+
+    .text-background {
+  
+        left: 10%; /* Moins d'espace sur les côtés pour les petits écrans */
+        transform: translate(-10%, -50%);
+        width: 80%; /* Largeur plus grande pour le texte sur les petits écrans */
+    }
+
+    .text-background h1, .text-background .lead {
+        display: block; /* Chaque élément prend toute la largeur */
+        padding: 0.5em; /* Moins de padding sur les petits écrans */
+        font-size: smaller; /* Police plus petite sur les petits écrans */
+    }
+}
+
+  /*c pr la landing page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-primary: rgb(72, 38, 210);
+    --color-secondary: #232836;
+    --color-third: #ececec;
+
+    --color-white:#fff;
+
+    --text-color: #222;
+    --body-color: #d3f3db;
+
+    --main-transition: all .3s ease;
+}
+
+*{
+  
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.containerform {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    background-color: #fbfbfb;
+}
+
+.form {
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+    transition: all .6s ease-in;
+}
+
+
+
+
+.forms.show__signup .form.connexion {
+    opacity: 0;
+    pointer-events: none;
+}
+
+header {
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.form .field {
+    position: relative;
+    height: 45px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.field input,
+.field button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+}
+
+.field input {
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 15px;
+    border: 1px solid #cacaca;
+    transition: var(--main-transition);
+}
+
+.field input:focus {
+    border-bottom-width: 2px;
+    border-bottom-color: var(--color-primary);
+}
+
+.eye__icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.field button {
+    color: var(--color-third);
+    background-color: var(--color-primary);
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+
+.field button:hover {
+    background-color: #966cde;
+}
+
+.form__liens {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+@media screen and (max-width:400px) {
+    .form {
+        padding: 15px 10px;
+    }
+}
+/* fin du css pr la connexion a la page admin */
+
+.carousel-image {
+    height: 50vh;
+width: 50vh;
+}
+
+
+/* information*/
+.icon {
+    width: 40%;
+    color: #ffffff;
+    padding: 0px;
+
+  }
+  
+  .explication-titre {
+    font-size: 26px;
+    color: #ffffff;
+
+  }
+  
+  .explication-text {
+    font-size: 18px;
+    padding-top: 20px;
+    color: #ffffff;
+    margin-bottom: 5vh;
+  }
+
+  /* css pr les cartes dans la page tarif */
+#itamsection .card {
+    margin-top: 90px; 
+}
+
+/* test pr les partenaire */
+
+
+
+
+  .image-arrondie {
+    border-radius: 80px 0px 80px 0px; 
+    margin-top: 2vh;
+
+  }
+  .image-arrondie2 {
+    border-radius:  0px 80px  0px 80px; 
+    margin-top: 2vh;
+  }
+  
+
+
+  /* carousell */
+  .carousel-item{
+height: 300px;
+  }
