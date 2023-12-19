@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-        <link href="../webweek/css/style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,17 +34,17 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/webweek/poo/inscription.php">Inscription</a>
+                            <a class="nav-link mx-lg-2" href="poo/inscription.php">Inscription</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="#">Partenaire</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/webweek/php/equipe.php">Equipe</a>
+                            <a class="nav-link mx-lg-2" href="php/equipe.php">Equipe</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="/webweek/php/resultat.php">Classement</a>
+                        <a class="nav-link mx-lg-2" href="php/resultat.php">Classement</a>
                         </li>
                     </ul>
                 </div>
@@ -134,7 +134,8 @@
     </div>
 </div>
 </div>
-<div class="deroulement">
+      
+<div id="ancre_programme" class="deroulement">
         <h2 class="text-center">DEROULEMENT DE LA JOURNEE</h2>
         <div class="container_horaires">
             <div class="horaires">
