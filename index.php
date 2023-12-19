@@ -133,11 +133,35 @@
     </div>
 </div>
 </div>
-
-
-
-    
-
+<div class="deroulement">
+        <h2 class="text-center">DÉROULEMENT DE LA JOURNÉE</h2>
+        <div class="container_horaires">
+            <div class="horaires">
+                <h3>10h Inscription</h3>
+                <p>Accueil et validation des inscriptions</p>
+            </div>
+            <div class="horaires">
+                <h3>10h30 Briefing</h3>
+                <p>Le président prendra la parole en résumant les parcours, le classement et les règles de sécurité à suivre</p>
+            </div>
+            <div class="horaires">
+                <h3>11h Épreuves</h3>
+                <p>Les différents niveaux passeront sur les parcours, les arbitres prennent en compte le chrono et le résultat</p>
+            </div>
+            <div class="horaires">
+                <h3>12h Pause Repas</h3>
+                <p>Pause repas, un stand de snack sera disponible sur place</p>
+            </div>
+            <div class="horaires">
+                <h3>14h Reprise des épreuves</h3>
+                <p>Seuls les 4 meilleurs chronomètres iront en demi-finale !</p>
+            </div>
+            <div class="horaires">
+                <h3>17h Remise des prix</h3>
+                <p>Remise des prix des équipes vainqueurs</p>
+            </div>
+        </div>
+    </div>
     <!-- Boostrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
