@@ -135,7 +135,7 @@
 </div>
 </div>
 <div class="deroulement">
-        <h2 class="text-center">DÉROULEMENT DE LA JOURNÉE</h2>
+        <h2 class="text-center">DEROULEMENT DE LA JOURNEE</h2>
         <div class="container_horaires">
             <div class="horaires">
                 <h3>10h Inscription</h3>

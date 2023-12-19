@@ -1,12 +1,30 @@
+@font-face {
+    font-family: "Koulen";
+    src: local("Koulen"),
+        url(../typo/Koulen.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+        url(../typo/Poppins.ttf) format(truetype);
+}
 
 body{
     background-color: rgb(255, 255, 255);
 }
 
+h1{
+    font-family: Koulen;
+}
+h2{
+    font-family: Koulen;
+}
+
+
 /* css pr la navbar */
 .navbar {
     background-color: #182972;
-
     height: 100px;
     font-size: larger;
 }
@@ -38,6 +56,7 @@ body{
 
 .nav-link {
     color: #ffffff;
+    font-family: Poppins;
     font-weight: 699;
     font-weight: bold;
     position: relative;
