@@ -377,6 +377,7 @@ width: 50vh;
     font-family: Koulen;
     font-size: 25px;
     margin-top: 1%;
+    font-family: "Koulen";
 }
 
 .button_inscription:hover{
@@ -389,6 +390,10 @@ width: 50vh;
     background-color: #A9CAFD;
     text-align: center;
     padding: 3%;
+}
+
+.formulaire_insc h1{
+    font-family: "Koulen";
 }
 
 .form-group {
@@ -418,6 +423,7 @@ width: 50vh;
     color: #FFF;
     padding-left: 1%;
     padding-right:1% ;
+    font-family: "Koulen";
 }
 
 .btn-inscription:hover{
