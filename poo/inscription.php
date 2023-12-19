@@ -82,7 +82,7 @@
 
 <section id="itamsection">
 <div class="container">
-    <h2 class="itam">Liste des Tarifs</h2>
+    <h2 class="itam text-center mb-4">TARIFS</h2>
     <div class="row">
         <?php 
             include '../php/config.php';
@@ -115,30 +115,36 @@
         ?>
     </div>
 </div>
-</section>
-    <h1>Inscription Participant</h1>
+<!-- Plus d'info programme -->
+<div class="row">
+    <div class="col-md-12">
+      <div class="info_programme">
+        <h2>Plus d'info sur le programme</h2>
+        <a href="../index.php#ancre_programme" class="btn button_inscription">CLIQUE ICI</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="formulaire_insc mt-5">
+    <h1 class="mb-4">INSCRIPTION</h1>
     <form action="inscriptionscript.php" method="post" enctype="multipart/form-data">
-        <div>
-            <label for="nom">Nom:</label>
-            <input type="text" id="nom" name="nom" required pattern="[A-Za-z]+" title="Nom sans chiffres ou caractères spéciaux">
+        <div class="form-group text-center mx-auto">
+            <input type="text" id="nom" name="nom" required pattern="[A-Za-z]+" placeholder="Nom">
         </div>
-        <div>
-            <label for="prenom">Prénom:</label>
-            <input type="text" id="prenom" name="prenom" required pattern="[A-Za-z]+" title="Prénom sans chiffres ou caractères spéciaux">
+        <div class="form-group text-center mx-auto">
+            <input type="text" id="prenom" name="prenom" required pattern="[A-Za-z]+" placeholder="Prénom">
         </div>
-        <div>
-            <label for="age">Âge:</label>
-            <input type="number" id="age" name="age" required min="10" max="100" title="Âge doit être entre 10 et 100">
+        <div class="form-group text-center mx-auto">
+            <input type="number" id="age" name="age" required min="10" max="100" placeholder="Âge">
         </div>
-        <div>
+        <div class="form-group text-center mx-auto">
             <label for="photo">Photo:</label>
             <input type="file" id="photo" name="photo" accept="image/png, image/jpeg">
         </div>
-        <div>
-            <label for="id_equipe">ID Équipe:</label>
-            <input type="number" id="id_equipe" name="id_equipe" required>
+        <div class="form-group text-center mx-auto">
+            <input type="number" id="id_equipe" name="id_equipe" required placeholder="id-equipe">
         </div>
-        <input type="submit" value="S'inscrire">
+        <input type="submit" class="btn btn-inscription" value="S'INSCRIRE">
     </form>
 </body>
 </html>
