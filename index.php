@@ -34,16 +34,16 @@
                      <div class="logo">   </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="../poo/inscription.php">Inscription</a>
+                            <a class="nav-link mx-lg-2" href="poo/inscription.php">Inscription</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="#">Partenaire</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/webweek/php/equipe.php">Equipe</a>
+                            <a class="nav-link mx-lg-2" href="php/equipe.php">Equipe</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="/webweek/php/resultat.php">Classement</a>
+                        <a class="nav-link mx-lg-2" href="php/resultat.php">Classement</a>
                         </li>
                     </ul>
                 </div>
@@ -126,7 +126,7 @@
             <div class="card custom-card">
                 <div class="card-body">
                     <p class="card-text">Le 14 décembre tout au long de la journée. Vous retrouverez la programmation complète ainsi que les horaires.</p>
-                    <a href="#" class="stretched-link">Inscription</a>
+                    <a href="poo/inscription.php" class="stretched-link">Inscription</a>
                 </div>
             </div>
         </div>

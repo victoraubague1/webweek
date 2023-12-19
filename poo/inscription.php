@@ -33,16 +33,16 @@
                      <div class="logo">   </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="../poo/inscription.php">Inscription</a>
+                            <a class="nav-link mx-lg-2" href="inscription.php">Inscription</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="#">Partenaire</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/webweek/php/equipe.php">Equipe</a>
+                            <a class="nav-link mx-lg-2" href="../php/equipe.php">Equipe</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="/webweek/php/resultat.php">Classement</a>
+                        <a class="nav-link mx-lg-2" href="../php/resultat.php">Classement</a>
                         </li>
                     </ul>
                 </div>
@@ -142,7 +142,7 @@
             <input type="file" id="photo" name="photo" accept="image/png, image/jpeg">
         </div>
         <div class="form-group text-center mx-auto">
-            <input type="number" id="id_equipe" name="id_equipe" required placeholder="id-equipe">
+            <input type="number" id="id_equipe" name="id_equipe" required placeholder="Id-equipe">
         </div>
         <input type="submit" class="btn btn-inscription" value="S'INSCRIRE">
     </form>

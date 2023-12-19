@@ -1,3 +1,4 @@
+/* Polices */
 @font-face {
     font-family: "Koulen";
     src: local("Koulen"),
@@ -22,7 +23,7 @@ h2{
 }
 
 
-/* css pr la navbar */
+/* ************************************************** navbar *************************************************** */
 .navbar {
     background-color: #182972;
     height: 100px;
@@ -68,18 +69,19 @@ h2{
 .nav-link:hover, .nav-link.active {
     color: #6a89b4;
 }
+/* Logo  */
 .logo {
     width: 80px; 
-    height: 80px; /* Hauteur du logo */
-    transition: opacity 0.3s ease; /* Transition douce pour l'opacité */
-    content: url('../img/logo.png'); /* Changez l'image du logo au survol ici */
+    height: 80px;
+    transition: opacity 0.3s ease; /* Transition pour l'opacité */
+    content: url('../img/logo.png');
   }
+
+.logo:hover{
+    transform: scale(1.1);
+}
   
-  .logo:hover {
-    content: url('https://sothebys-md.brightspotcdn.com/dims4/default/29b58a0/2147483647/strip/true/crop/2000x2000+0+0/resize/385x385!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F7e%2Fb9%2Fd2b6288a4a2b86b72e75ded01e35%2F730sneakers-c7drw-t3-04.jpg'); /* Changez l'image du logo au survol ici */
-  }
-  
-/* css pr la navbar responsive */
+/* css pour la navbar responsive */
 @media (min-width: 991px) {
 
     .nav-link::before{
@@ -310,9 +312,6 @@ form {
 
 
 
-
-
-
 @media screen and (max-width:400px) {
     .form {
         padding: 15px 10px;
@@ -347,8 +346,8 @@ width: 50vh;
     margin-bottom: 5vh;
   }
 
-/* *********************************PAGE TARIF****************************************** */
-  /* css pr les cartes dans la page tarif */
+/* *************************************************PAGE TARIF*************************************************** */
+  /* cartes */
   #itamsection {
     background-color: #f8f9fa;
     padding: 40px 0;
@@ -362,6 +361,7 @@ width: 50vh;
     border-radius: 10px;
 }
 
+/* CALL TO ACTION PROGRAMME */
 .info_programme {
     text-align: center;
     padding: 25px;
@@ -401,21 +401,26 @@ width: 50vh;
     border-radius: 35px;
     margin-top: 15px; 
     max-width: 800px;
+    color: #FFF;
+    font-size: 20px;
 }
 
 .form-group input{
     background-color: #3D5695;
     border: none;
+    height: 45px;
 }
 
 .form-group input::placeholder {
     color: #ffffff;
     text-align: center;
     opacity: 1;
+    font-size: 20px;
 }
 
-
 .btn-inscription{
+    width: 300px;
+    height: 50px;
     background-color:#00175E;
     border: none;
     border-radius:35px;
@@ -423,6 +428,7 @@ width: 50vh;
     color: #FFF;
     padding-left: 1%;
     padding-right:1% ;
+    font-size: 25px;
     font-family: "Koulen";
 }
 
@@ -452,3 +458,4 @@ width: 50vh;
   .carousel-item{
 height: 300px;
   }
+
