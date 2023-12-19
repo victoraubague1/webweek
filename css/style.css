@@ -1,19 +1,39 @@
+@font-face {
+    font-family: "Koulen";
+    src: local("Koulen"),
+        url(../typo/Koulen.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+        url(../typo/Poppins.ttf) format(truetype);
+}
 
 body{
-    background-color: rgb(156, 139, 139);
+    background-color: rgb(255, 255, 255);
 }
+
+h1{
+    font-family: Koulen;
+}
+h2{
+    font-family: Koulen;
+}
+
 
 /* css pr la navbar */
 .navbar {
     background-color: #182972;
-
-    height: 80px;
+    height: 100px;
     font-size: larger;
 }
 
+
+
 .navbar-brand {
 
-    color: #b1b1b1;
+    color: #ffffff;
     font-size: 24px;
     transition: 0.3s color;
 }
@@ -21,8 +41,9 @@ body{
 
 /* espacement de la navbar */
 .navbar-nav .nav-item  {
-    margin-left: 5%; 
-    margin-right: 5%;
+    margin-left: 1%; 
+    margin-right: 1%;
+
 }
 
 .navbar-toggler {
@@ -37,6 +58,7 @@ body{
 
 .nav-link {
     color: #ffffff;
+    font-family: Poppins;
     font-weight: 699;
     font-weight: bold;
     position: relative;
@@ -44,11 +66,11 @@ body{
 }
 
 .nav-link:hover, .nav-link.active {
-    color: #c58686;
+    color: #6a89b4;
 }
 .logo {
-    width: 50px; 
-    height: 50px; /* Hauteur du logo */
+    width: 80px; 
+    height: 80px; /* Hauteur du logo */
     transition: opacity 0.3s ease; /* Transition douce pour l'opacité */
     content: url('../img/logo.png'); /* Changez l'image du logo au survol ici */
   }
@@ -68,7 +90,7 @@ body{
         transform: translateX(-50%);
         width: 0;
         height: 2px;
-        background-color: #204716;
+        background-color: #ffffff;
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }
@@ -163,28 +185,6 @@ body{
         padding: 0.5em; /* Moins de padding sur les petits écrans */
         font-size: smaller; /* Police plus petite sur les petits écrans */
     }
-}
-/* Deroulement */
-.deroulement {
-    background-color: #A9CAFD; 
-    color: #002596;
-    padding-top: 30px;
-}
-.deroulement h2 {
-    color: #002596; 
-    margin-bottom: 30px; 
-    font-weight: bold;
-}
-.container_horaires {
-    background-color: #A9CAFD; 
-    padding: 20px;
-    border-radius: 8px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
-    text-align: center;
-}
-.horaires h3 {
-    font-size: 25px;
-    font-weight: bold;
 }
 
   /*c pr la landing page */
@@ -377,6 +377,7 @@ width: 50vh;
     font-family: Koulen;
     font-size: 25px;
     margin-top: 1%;
+    font-family: "Koulen";
 }
 
 .button_inscription:hover{
@@ -389,6 +390,10 @@ width: 50vh;
     background-color: #A9CAFD;
     text-align: center;
     padding: 3%;
+}
+
+.formulaire_insc h1{
+    font-family: "Koulen";
 }
 
 .form-group {
@@ -418,6 +423,7 @@ width: 50vh;
     color: #FFF;
     padding-left: 1%;
     padding-right:1% ;
+    font-family: "Koulen";
 }
 
 .btn-inscription:hover{
