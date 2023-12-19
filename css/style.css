@@ -482,6 +482,7 @@ width: 100%;
 
   /* Styles pour les en-têtes d'administration */
 .admin-heading {
+   margin-top: 200;
     font-family: Koulen, sans-serif;
     color: #182972;
     text-align: center;
@@ -542,4 +543,19 @@ width: 100%;
 .admin-form input[type=checkbox] {
     margin-right: 5px;
 }
+
+
+
+
+
+
+
+
+
+/* **************************************** PAGE ADMIN ******************************************************* */
+.php{ /* div qui sert a mettre de l'espace entre la navbar et le contenus */
+    margin-top: 15vh;
+    margin-left: 10vh;
+    margin-right: 10vh
+ }
 
