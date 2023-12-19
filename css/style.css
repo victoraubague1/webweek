@@ -72,7 +72,7 @@ h2{
     width: 80px; 
     height: 80px; /* Hauteur du logo */
     transition: opacity 0.3s ease; /* Transition douce pour l'opacité */
-    content: url('https://logowik.com/content/uploads/images/863_louis_vuitton.jpg'); /* Changez l'image du logo au survol ici */
+    content: url('../img/logo.png'); /* Changez l'image du logo au survol ici */
   }
   
   .logo:hover {
