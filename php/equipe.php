@@ -55,9 +55,9 @@
         </div>
     </nav>
     <div class="php">
-    <!-- End Navbar -->
+    <!-- Fin de la navbar -->
     <?php 
-// PHP Code to Fetch Data
+
 include '../php/config.php';
 
 try {
@@ -73,7 +73,8 @@ try {
 
     foreach ($equipes as $equipe) {
         echo '<div class="row mb-3">';
-        echo '<div class="col-12"><h2>Équipe ' . $compteurEquipe . ': ' . htmlspecialchars($equipe['nom_equipe']) . '</h2></div>';
+        echo '<div class="col-12 text-center"><h2>Équipe ' . $compteurEquipe . ': ' . htmlspecialchars($equipe['nom_equipe']) . '</h2></div>';
+
 
         // Récupération et affichage des joueurs de l'équipe
         $stmtJoueurs = $conn->prepare("SELECT * FROM Participant WHERE id_equipe = ?");
@@ -81,10 +82,10 @@ try {
         $joueurs = $stmtJoueurs->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($joueurs as $joueur) {
-            echo '<div class="col-sm-6 col-md-4 col-lg-2 mb-3">'; 
-            echo '<div class="card">';
+            echo '<div class="col-sm-6 col-md-4 col-lg-4 mb-3">';
+            echo '<div class="card position-relative">';
             echo '<img src="' . htmlspecialchars($joueur['photo_participant']) . '" class="card-img-top" alt="Photo de ' . htmlspecialchars($joueur['prenom']) . '">';
-            echo '<div class="card-body">';
+            echo '<div class="card-body position-absolute text-center" style="bottom: 0; left: 0; right: 0;     background-color: rgba(67, 76, 255, 0.7);  color: white;">';
             echo '<h5 class="card-title">' . htmlspecialchars($joueur['nom']) . ' ' . htmlspecialchars($joueur['prenom']) . '</h5>';
             echo '</div>';
             echo '</div>';
@@ -155,18 +156,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['search'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Recherche de Participants</title>
 </head>
-<body>
-    <div class="container mt-4  half-width-container ">
-        <h2>Recherche de Participants</h2>
-        <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-            <input type="text" name="search" placeholder="Entrez le nom ou prénom du participant" list="noms-list" value="<?php echo $search; ?>">
-            <datalist id="noms-list">
-                <?php foreach ($noms as $nom): ?>
-                    <option value="<?php echo htmlspecialchars($nom); ?>">
-                <?php endforeach; ?>
-            </datalist>
-            <button type="submit">Rechercher</button>
-        </form>
+<div class="container d-flex justify-content-center align-items-center ">
+        <div class="text-center"> 
+            <h2>Recherche de Participants</h2>
+            <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                <input type="text" name="search" placeholder="Entrez le nom ou prénom du participant" list="noms-list" value="<?php echo $search; ?>">
+                <datalist id="noms-list">
+                    <?php foreach ($noms as $nom): ?>
+                        <option value="<?php echo htmlspecialchars($nom); ?>">
+                    <?php endforeach; ?>
+                </datalist>
+                <button type="submit">Rechercher</button>
+            </form>
         
         <?php if (!empty($participants)): ?>
             <table class="table">
