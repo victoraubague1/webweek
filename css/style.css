@@ -476,4 +476,70 @@ width: 100%;
     border-radius:  0px 80px  0px 80px; 
     margin-top: 2vh;
   }
-  
+
+
+/* **************************************** PAGE ADMIN ******************************************************* */
+
+  /* Styles pour les en-têtes d'administration */
+.admin-heading {
+    font-family: Koulen, sans-serif;
+    color: #182972;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les formulaires d'administration */
+.admin-form {
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Styles pour les labels dans les formulaires d'administration */
+.admin-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Styles pour les fieldsets et legends dans les formulaires d'administration */
+.admin-form fieldset {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 10px;
+}
+.admin-form legend {
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Styles pour les boutons d'administration */
+.admin-form input[type=submit], .admin-btn-logout {
+    background-color: #182972;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.admin-form input[type=submit]:hover, .admin-btn-logout:hover {
+    background-color: #0f1b5a;
+}
+
+/* Styles pour les sélecteurs et checkboxes dans les formulaires d'administration */
+.admin-form select, .admin-form input[type=number] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.admin-form input[type=checkbox] {
+    margin-right: 5px;
+}
+
