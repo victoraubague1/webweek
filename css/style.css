@@ -1,19 +1,19 @@
 
 body{
-    background-color: rgb(156, 139, 139);
+    background-color: rgb(255, 255, 255);
 }
 
 /* css pr la navbar */
 .navbar {
     background-color: #182972;
 
-    height: 80px;
+    height: 100px;
     font-size: larger;
 }
 
 .navbar-brand {
 
-    color: #b1b1b1;
+    color: #ffffff;
     font-size: 24px;
     transition: 0.3s color;
 }
@@ -21,8 +21,9 @@ body{
 
 /* espacement de la navbar */
 .navbar-nav .nav-item  {
-    margin-left: 5%; 
-    margin-right: 5%;
+    margin-left: 1%; 
+    margin-right: 1%;
+
 }
 
 .navbar-toggler {
@@ -44,11 +45,11 @@ body{
 }
 
 .nav-link:hover, .nav-link.active {
-    color: #c58686;
+    color: #6a89b4;
 }
 .logo {
-    width: 50px; 
-    height: 50px; /* Hauteur du logo */
+    width: 80px; 
+    height: 80px; /* Hauteur du logo */
     transition: opacity 0.3s ease; /* Transition douce pour l'opacité */
     content: url('../img/logo.png'); /* Changez l'image du logo au survol ici */
   }
@@ -68,7 +69,7 @@ body{
         transform: translateX(-50%);
         width: 0;
         height: 2px;
-        background-color: #204716;
+        background-color: #ffffff;
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }

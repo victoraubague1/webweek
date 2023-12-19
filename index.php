@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classement</title>
+    <title>Accueil</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -27,16 +27,17 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                     
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+
+                         <li class="nav-item">
+                             <div class="logo"> <a href="/webweek/index.php"></a>   </div>
+                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/webweek/poo/inscription.php">Inscription</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="#">Partenaire</a>
-                        </li>
-                        <li class="nav-item">
-                     <div class="logo">   </div>
                         </li>
                         
                         <li class="nav-item">
