@@ -149,7 +149,7 @@ try {
 <div class="container half-width-container mt-6">
     <h1 class="text-center mt-4">Résultats des Matchs</h1>
     <?php if (!empty($resultats)): ?>
-        <table class="table table-light table-hover">
+        <table class="table  table-primary table-hover">
             <thead>
                 <tr>
                     <th>Équipe 1</th>
@@ -214,7 +214,7 @@ try {
 <body>
 <div class="container half-width-container mt-6">
         <h1 class="text-center">Classement des Équipes</h1>
-        <table class="table table-light table-hover">
+        <table class="table table-primary table-hover">
             <thead>
                 <tr>
                     <th>Équipe</th>
