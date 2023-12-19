@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 08 déc. 2023 à 19:09
+-- Généré le : mer. 13 déc. 2023 à 22:49
 -- Version du serveur : 10.4.28-MariaDB
--- Version de PHP : 8.2.4
+-- Version de PHP : 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -65,16 +65,19 @@ CREATE TABLE `activite_equipe` (
 CREATE TABLE `equipe` (
   `id_equipe` int(11) NOT NULL,
   `nom_equipe` varchar(255) NOT NULL,
-  `id_groupe` int(11) DEFAULT NULL
+  `id_groupe` int(11) DEFAULT NULL,
+  `points` int(11) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `equipe`
 --
 
-INSERT INTO `equipe` (`id_equipe`, `nom_equipe`, `id_groupe`) VALUES
-(1, 'test1', NULL),
-(2, 'Equipe 2', NULL);
+INSERT INTO `equipe` (`id_equipe`, `nom_equipe`, `id_groupe`, `points`) VALUES
+(1, 'Team du Yams', NULL, 0),
+(2, 'Team du puy', NULL, 2),
+(3, 'Team des sorcières', NULL, 0),
+(4, 'Team 4', NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -157,15 +160,21 @@ CREATE TABLE `participant` (
 --
 
 INSERT INTO `participant` (`id_participant`, `nom`, `prenom`, `age`, `photo_participant`, `id_equipe`) VALUES
-(3, 'TEST1', 'TEST1', 18, '/webweek/img/joueur1.jpg', 1),
-(4, 'Nom1', 'Prénom1', 25, '/webweek/img/joueur2.jpg', 1),
-(5, 'Nom2', 'Prénom2', 26, NULL, 1),
-(6, 'Nom5', 'Prénom5', 27, NULL, 1),
-(7, 'Nom6', 'Prénom6', 28, NULL, 1),
-(8, 'Nom11', 'Prénom12', 25, '/webweek/img/joueur3.jpg\r\n', 2),
-(9, 'Nom21', 'Prénom22', 26, NULL, 2),
-(10, 'Nom51', 'Prénom52', 27, NULL, 2),
-(11, 'Nom62', 'Prénom62', 28, NULL, 2);
+(9, 'Nom21', 'Prénom22', 26, '../webweek/img/joueur1.jpg', 2),
+(10, 'Nom51', 'Prénom52', 27, '../webweek/img/joueur1.jpg', 2),
+(11, 'Nom62', 'Prénom62', 28, '../webweek/img/joueur1.jpg', 2),
+(12, 'aa', 'aa', 12, '../webweek/img/joueur1.jpg', 1),
+(13, 'girlz', 'power', 11, '../webweek/img/joueur1.jpg', 2),
+(14, 'girlz', 'power', 11, '../webweek/img/joueur1.jpg', 2),
+(28, 'Titouan', 'Delarie', 11, '../webweek/img/joueur1.jpg', 1),
+(29, 'Titouan', 'Delarie', 11, '../webweek/img/joueur1.jpg', 1),
+(30, 'Titouan', 'Delarie', 11, '../webweek/img/joueur1.jpg', 1),
+(31, 'aa', 'aa', 12, '../webweek/img/joueur1.jpg', 1),
+(32, 'equipetrois', 'aaa', 99, '../webweek/img/joueur1.jpg', 3),
+(33, 'six', 'six', 12, '../webweek/img/joueur1.jpg', 1),
+(34, 'sixdeux', 'sixdeu', 61, '../webweek/img/joueur1.jpg', 2),
+(35, 'Hippo', 'HippoPuy', 18, '../webweek/img/joueur1.jpg\r\n', 1),
+(36, 'norma', 'norma', 12, '../webweek/img/joueur2.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -175,22 +184,22 @@ INSERT INTO `participant` (`id_participant`, `nom`, `prenom`, `age`, `photo_part
 
 CREATE TABLE `resultat` (
   `id_resultat` int(11) NOT NULL,
-  `score` int(11) DEFAULT NULL,
   `heure` time DEFAULT NULL,
   `id_equipe1` int(11) DEFAULT NULL,
   `id_equipe2` int(11) DEFAULT NULL,
-  `id_activite` int(11) DEFAULT NULL
+  `id_activite` int(11) DEFAULT NULL,
+  `id_equipe_gagnante` int(11) DEFAULT NULL,
+  `score_equipe1` int(11) DEFAULT NULL,
+  `score_equipe2` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `resultat`
 --
 
-INSERT INTO `resultat` (`id_resultat`, `score`, `heure`, `id_equipe1`, `id_equipe2`, `id_activite`) VALUES
-(1, 3, NULL, 1, 2, 1),
-(2, 2, NULL, 2, 1, 2),
-(3, 1, NULL, 1, 2, 3),
-(4, 4, NULL, 2, 1, 4);
+INSERT INTO `resultat` (`id_resultat`, `heure`, `id_equipe1`, `id_equipe2`, `id_activite`, `id_equipe_gagnante`, `score_equipe1`, `score_equipe2`) VALUES
+(65, NULL, 1, 2, 2, 2, 1, 2),
+(66, NULL, 2, 3, 4, 2, 2, -1);
 
 --
 -- Index pour les tables déchargées
@@ -265,7 +274,7 @@ ALTER TABLE `activite`
 -- AUTO_INCREMENT pour la table `equipe`
 --
 ALTER TABLE `equipe`
-  MODIFY `id_equipe` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_equipe` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `groupe`
@@ -289,13 +298,13 @@ ALTER TABLE `partenaire`
 -- AUTO_INCREMENT pour la table `participant`
 --
 ALTER TABLE `participant`
-  MODIFY `id_participant` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_participant` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT pour la table `resultat`
 --
 ALTER TABLE `resultat`
-  MODIFY `id_resultat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_resultat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 
 --
 -- Contraintes pour les tables déchargées
