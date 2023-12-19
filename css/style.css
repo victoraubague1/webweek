@@ -166,6 +166,28 @@ body{
         font-size: smaller; /* Police plus petite sur les petits écrans */
     }
 }
+/* Deroulement */
+.deroulement {
+    background-color: #A9CAFD; 
+    color: #002596;
+    padding-top: 30px;
+}
+.deroulement h2 {
+    color: #002596; 
+    margin-bottom: 30px; 
+    font-weight: bold;
+}
+.container_horaires {
+    background-color: #A9CAFD; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    text-align: center;
+}
+.horaires h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
 
   /*c pr la landing page */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
