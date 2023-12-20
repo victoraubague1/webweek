@@ -36,7 +36,7 @@
                             <a class="nav-link mx-lg-2" href="inscription.php">Inscription</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="../partenaire.php">Partenaire</a>
+                            <a class="nav-link mx-lg-2" href="../php/partenaire.php">Partenaire</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="../php/equipe.php">Equipe</a>
@@ -55,7 +55,7 @@
             </button>
         </div>
     </nav>
-    <div class="php">
+    <div class="espace_navbar">
 
 
   

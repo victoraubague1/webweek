@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classement</title>
-
     <!-- Bootstrap CSS -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 
     <link href="../css/style.css" rel="stylesheet">
 </head>
@@ -33,7 +34,7 @@
                             <a class="nav-link mx-lg-2" href="../poo/inscription.php">Inscription</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="../partenaire.php">Partenaire</a>
+                            <a class="nav-link mx-lg-2" href="partenaire.php">Partenaire</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="equipe.php">Equipe</a>
@@ -51,18 +52,9 @@
             </button>
         </div>
     </nav>
-    <div class="php">
 
-
-
-
-        <!-- Boostrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <div class="espace_navbar">
     </div>
-</body>
-
-</html>
-
 
 <?php
 include 'config.php';
@@ -125,25 +117,24 @@ try {
 ?>
 
 
+<!-- Tableau Résultats des matchs  -->
+<div class="container half-width-container mt-6">
+    <h1 class="text-center mt-4">Resultats des Matchs</h1>
+    <?php if (!empty($resultats)): ?>
+        <table class="table  table-primary table-hover">
+            <thead>
+                <tr>
+                    <th>Équipe 1</th>
+                    <th>Score Équipe 1</th>
+                    <th>Équipe 2</th>
+                    <th>Score Équipe 2</th>
+                    <th>Équipe Gagnante</th>
+                    <th>Activité</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($resultats as $resultat): ?>
 
-
-
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <title>Resultats des Matchs</title>
-</head>
-
-<body>
-    <div class="container half-width-container mt-6">
-        <h1 class="text-center mt-4">Resultats des Matchs</h1>
-        <?php if (!empty($resultats)) : ?>
-            <table class="table  table-primary table-hover">
-                <thead>
                     <tr>
                         <th>Équipe 1</th>
                         <th>Score Équipe 1</th>
@@ -163,18 +154,14 @@ try {
                             <td><?php echo htmlspecialchars($resultat['id_equipe_gagnante'] == $resultat['id_equipe1'] ? $resultat['nom_equipe1'] : $resultat['nom_equipe2']); ?></td>
                             <td><?php echo htmlspecialchars($resultat['nom_activite']); ?></td>
                         </tr>
-                    <?php endforeach; ?>
-                </tbody>
-            </table>
-        <?php else : ?>
-            <p class="text-center">Aucun résultat trouvé.</p>
-        <?php endif; ?>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    </div>
-</body>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    <?php else: ?> 
+        <p class="text-center">Aucun résultat trouvé.</p>    
+    <?php endif; ?>
 
-</html>
-
+<!-- Classement des équipes  -->
 <?php
 include 'config.php';
 
@@ -192,18 +179,7 @@ try {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <title>Classement des Equipes</title>
-</head>
-
-<body>
-    <div class="container half-width-container mt-6">
+<div class="container half-width-container mt-6">
         <h1 class="text-center">Classement des Equipes</h1>
         <table class="table table-primary table-hover">
             <thead>
@@ -222,7 +198,12 @@ try {
             </tbody>
         </table>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-</body>
-
+     <!-- Boostrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+    </body>
 </html>

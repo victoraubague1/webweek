@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
 $dbUser = 'root';
-$dbPassword = 'root'; 
+$dbPassword = ''; 
 $dbName = 'ski'; 
 ?>
