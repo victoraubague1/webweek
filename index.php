@@ -34,16 +34,16 @@
                      <div class="logo"><a href="../index.php"></a></div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="../poo/inscription.php">Inscription</a>
+                            <a class="nav-link mx-lg-2" href="poo/inscription.php">Inscription</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Partenaire</a>
+                            <a class="nav-link mx-lg-2" href="partenaire.php">Partenaire</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/webweek/php/equipe.php">Equipe</a>
+                            <a class="nav-link mx-lg-2" href="php/equipe.php">Equipe</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="/webweek/php/resultat.php">Classement</a>
+                        <a class="nav-link mx-lg-2" href="php/resultat.php">Classement</a>
                         </li>
                     </ul>
                 </div>
@@ -136,9 +136,13 @@ Inscription
               <p class="explication-titre ">Evenement ?</p>
               <p class="explication-text">
               une aventure sportive et festive qui rechauffera les coeurs en plein hiver
-
-
-              </p>
+        <!-- Colonne "QUAND ?" -->
+        <div class="col-md-4 mb-3">
+            <div class="card custom-card">
+                <div class="card-body">
+                    <p class="card-text">Le 14 décembre tout au long de la journée. Vous retrouverez la programmation complète ainsi que les horaires.</p>
+                    <a href="poo/inscription.php" class="stretched-link">Inscription</a>
+                </div>
             </div>
           </div>
         </div>

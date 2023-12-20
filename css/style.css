@@ -1,3 +1,4 @@
+/* Polices */
 @font-face {
     font-family: "Koulen";
     src: local("Koulen"),
@@ -33,8 +34,6 @@ h3{
     height: 100px;
     font-size: larger;
 }
-
-
 
 .navbar-brand {
 
@@ -85,7 +84,7 @@ h3{
     height: 90px;
   }
   
-/* css pr la navbar responsive */
+/* css pour la navbar responsive */
 @media (min-width: 991px) {
 
     .nav-link::before{
@@ -107,23 +106,20 @@ h3{
     }
    
 }
-/* pr un espacement dans le code  */
- .php{
-    margin-top: 15vh;
-    margin-left: 10vh;
-    margin-right: 10vh
- }
 
+/* ************************************************* PAGE EQUIPE *************************************************** */
  /* pour les cartes des joueurs */
 .card img{
     height: 100%;
     width: 100%;
 }
-/* pr la taille */
+/* pour la taille */
 .max-width-50 {
     max-width: 50%;
     margin: auto; 
 }
+
+/* *************************************************** PAGE D ACCUEIL************************************************ */
 
 /* image de la page d'accueil*/
 .jumbotron-custom {
@@ -139,58 +135,85 @@ h3{
     padding-top: 80px; 
 }
 
-
-
-/* Style du conteneur de texte pr la page d'accueil */
+/* Style du conteneur de texte sur l'image de la page d'accueil */
 .text-background {
     margin-top: 9%;
     text-align: left; 
-    max-width: 30%; /* Largeur maximale du conteneur de texte pour le garder concis */
-    position: absolute; /* Positionnement absolu pour permettre un contrôle précis */
-    left: 3.5%; /* Espacement depuis la gauche de l'écran */
+    max-width: 30%; 
+    position: absolute; 
+    left: 3.5%; 
 }
 
-/* Style du titre */
+/* Style du titre sur l'image */
 .text-background h1 {
-    background-color: hsla(240, 62%, 36%, 0.82); /* Couleur de fond avec opacité */
-    padding: 0.5em 1em; /* Espacement autour du texte */
-    border-radius: 0.25em; /* Coins arrondis */
-    margin-bottom: 0.5em; /* Espacement entre le titre et le sous-titre */
-    display: inline-block; /* Permettre le fond de s'adapter au texte */
-    font-size: 2.5em; /* Taille du texte réduite, ajustez ceci comme nécessaire */
+    background-color: hsla(240, 62%, 36%, 0.82); 
+    padding: 0.5em 1em; 
+    border-radius: 0.25em; 
+    margin-bottom: 0.5em; 
+    display: inline-block; 
+    font-size: 2.5em;
 }
 
 
-/* Style du sous-titre (lead) */
+/* Sous-titre (lead) */
+
 .text-background .lead {
     font-size: larger;
     background-color: hsla(240, 62%, 36%, 0.82);
-    padding: 0.5em 1em; /* Espacement autour du texte */
-    border-radius: 0.25em; /* Coins arrondis */
-    display: inline-block; /* Permettre le fond de s'adapter au texte */
+    padding: 0.5em 1em; 
+    border-radius: 0.25em; 
+    display: inline-block; 
     
 }
+
+
+/* information*/
+.icon {
+    width: 40%;
+    color: #ffffff;
+    padding: 0px;
+
+  }
+  
+  .explication-titre {
+    font-size: 26px;
+    color: #ffffff;
+
+  }
+  
+  .explication-text {
+    font-size: 18px;
+    padding-top: 20px;
+    color: #ffffff;
+    margin-bottom: 5vh;
+  }
+
+.carousel-image {
+    height: 50vh;
+    width: 50vh;
+    }
+
+/* Responsive */
 @media (max-width: 768px) {
     .jumbotron-custom {
         margin-top: 60px; /* Marge supérieure plus petite */
-        height: 40vh; /* Hauteur plus petite pour le jumbotron */
+        height: 40vh; 
     }
 
     .text-background {
-  
         left: 10%; /* Moins d'espace sur les côtés pour les petits écrans */
         transform: translate(-10%, -50%);
         width: 80%; /* Largeur plus grande pour le texte sur les petits écrans */
     }
 
     .text-background h1, .text-background .lead {
-        display: block; /* Chaque élément prend toute la largeur */
-        padding: 0.5em; /* Moins de padding sur les petits écrans */
+        display: block; 
+        padding: 0.5em; 
         font-size: smaller; /* Police plus petite sur les petits écrans */
     }
 }
 
-  /*c pr la landing page */
+/* ********************************************* PAGE ADMIN ********************************************************* */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
@@ -210,8 +233,6 @@ h3{
   
     font-family: 'Poppins', sans-serif;
 }
-
-
 
 .containerform {
     height: 100vh;
@@ -233,9 +254,6 @@ h3{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
     transition: all .6s ease-in;
 }
-
-
-
 
 .forms.show__signup .form.connexion {
     opacity: 0;
@@ -377,6 +395,7 @@ width: 100%;
     border-radius: 10px;
 }
 
+/* CALL TO ACTION PROGRAMME */
 .info_programme {
     text-align: center;
     padding: 25px;
@@ -416,21 +435,26 @@ width: 100%;
     border-radius: 35px;
     margin-top: 15px; 
     max-width: 800px;
+    color: #FFF;
+    font-size: 20px;
 }
 
 .form-group input{
     background-color: #3D5695;
     border: none;
+    height: 45px;
 }
 
 .form-group input::placeholder {
     color: #ffffff;
     text-align: center;
     opacity: 1;
+    font-size: 20px;
 }
 
-
 .btn-inscription{
+    width: 300px;
+    height: 50px;
     background-color:#00175E;
     border: none;
     border-radius:35px;
@@ -438,7 +462,11 @@ width: 100%;
     color: #FFF;
     padding-left: 1%;
     padding-right:1% ;
+    font-size: 25px;
     font-family: "Koulen";
+    font-size: 25px;
+    height: 50px;
+    width: 300px;
 }
 
 .btn-inscription:hover{
@@ -446,6 +474,7 @@ width: 100%;
     color: #FFF;
 }
 
+/* **************************************** PAGE PARTENAIRES ******************************************************* */
 /* test pr les partenaire */
 
 
@@ -460,4 +489,86 @@ width: 100%;
     border-radius:  0px 80px  0px 80px; 
     margin-top: 2vh;
   }
-  
+
+
+/* **************************************** PAGE ADMIN ******************************************************* */
+
+  /* Styles pour les en-têtes d'administration */
+.admin-heading {
+   margin-top: 200;
+    font-family: Koulen, sans-serif;
+    color: #182972;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les formulaires d'administration */
+.admin-form {
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Styles pour les labels dans les formulaires d'administration */
+.admin-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Styles pour les fieldsets et legends dans les formulaires d'administration */
+.admin-form fieldset {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 10px;
+}
+.admin-form legend {
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Styles pour les boutons d'administration */
+.admin-form input[type=submit], .admin-btn-logout {
+    background-color: #182972;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.admin-form input[type=submit]:hover, .admin-btn-logout:hover {
+    background-color: #0f1b5a;
+}
+
+/* Styles pour les sélecteurs et checkboxes dans les formulaires d'administration */
+.admin-form select, .admin-form input[type=number] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.admin-form input[type=checkbox] {
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* **************************************** PAGE ADMIN ******************************************************* */
+.php{ /* div qui sert a mettre de l'espace entre la navbar et le contenus */
+    margin-top: 15vh;
+    margin-left: 10vh;
+    margin-right: 10vh
+ }
+

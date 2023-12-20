@@ -36,7 +36,7 @@
                             <a class="nav-link mx-lg-2" href="../poo/inscription.php">Inscription</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Partenaire</a>
+                            <a class="nav-link mx-lg-2" href="../partenaire.php">Partenaire</a>
                         </li>
                         <li class="nav-item">
 
@@ -44,10 +44,10 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/php/equipe.php">Equipe</a>
+                            <a class="nav-link mx-lg-2" href="equipe.php">Equipe</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="/php/resultat.php">Classement</a>
+                        <a class="nav-link mx-lg-2" href="resultat.php">Classement</a>
                         </li>
                     </ul>
                 </div>
@@ -148,11 +148,11 @@ try {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
           crossorigin="anonymous">
-    <title>Résultats des Matchs</title>
+    <title>Resultats des Matchs</title>
 </head>
 <body>
 <div class="container half-width-container mt-6">
-    <h1 class="text-center mt-4">Résultats des Matchs</h1>
+    <h1 class="text-center mt-4">Resultats des Matchs</h1>
     <?php if (!empty($resultats)): ?>
         <table class="table  table-primary table-hover">
             <thead>
@@ -214,11 +214,11 @@ try {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
           crossorigin="anonymous">
-    <title>Classement des Équipes</title>
+    <title>Classement des Equipes</title>
 </head>
 <body>
 <div class="container half-width-container mt-6">
-        <h1 class="text-center">Classement des Équipes</h1>
+        <h1 class="text-center">Classement des Equipes</h1>
         <table class="table table-primary table-hover">
             <thead>
                 <tr>

@@ -65,6 +65,7 @@ try {
 }
 ?>
 
+<link href="../css/style.css" rel="stylesheet">
 
 
 <!DOCTYPE html>
@@ -72,47 +73,113 @@ try {
 <head>
     <meta charset="UTF-8">
     <title>Administration - Entrée des Résultats de Match</title>
+    
+    <link href="../css/style.css" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Entrée des Résultats de Match</h1>
-    <?php if (isset($message)) echo "<p>$message</p>"; ?>
+    
+<!DOCTYPE html>
+<html lang="fr">
 
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classement</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+ 
+     
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LogoHAHAHAH</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                        
+                    <li class="nav-item">
+                     <div class="logo">   </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../poo/inscription.php">Inscription</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../partenaire.php">Partenaire</a>
+                        </li>
+                        <li class="nav-item">
+
+     
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="equipe.php">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="resultat.php">Classement</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+           
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="php">
+    <h1 class="admin-heading">Entrée des Résultats de Match</h1>
+    <?php if (isset($message)) echo "<p class='admin-message'>$message</p>"; ?>
+
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="admin-form">
         <fieldset>
             <legend>Choisir deux équipes :</legend>
             <?php foreach ($equipes as $equipe) {
-                echo "<input type='checkbox' name='equipes[]' value='" . $equipe['id_equipe'] . "'> " . htmlspecialchars($equipe['nom_equipe']) . "<br>";
+                echo "<input type='checkbox' class='admin-checkbox' name='equipes[]' value='" . $equipe['id_equipe'] . "'> " . htmlspecialchars($equipe['nom_equipe']) . "<br>";
             } ?>
         </fieldset>
 
-        <label for="scoreEquipe1">Score Équipe 1:</label>
-        <input type="number" id="scoreEquipe1" name="scoreEquipe1" required><br>
+        <label for="scoreEquipe1" class="admin-label">Score Équipe 1:</label>
+        <input type="number" id="scoreEquipe1" name="scoreEquipe1" class="admin-input" required><br>
 
-        <label for="scoreEquipe2">Score Équipe 2:</label>
-        <input type="number" id="scoreEquipe2" name="scoreEquipe2" required><br>
+        <label for="scoreEquipe2" class="admin-label">Score Équipe 2:</label>
+        <input type="number" id="scoreEquipe2" name="scoreEquipe2" class="admin-input" required><br>
 
-        <label for="idEquipeGagnante">Équipe Gagnante:</label>
-        <select id="idEquipeGagnante" name="idEquipeGagnante" required>
+        <label for="idEquipeGagnante" class="admin-label">Équipe Gagnante:</label>
+        <select id="idEquipeGagnante" name="idEquipeGagnante" class="admin-select" required>
             <option value="">Sélectionner l'équipe gagnante</option>
             <?php foreach ($equipes as $equipe) {
                 echo "<option value='" . $equipe['id_equipe'] . "'>" . htmlspecialchars($equipe['nom_equipe']) . "</option>";
             } ?>
         </select><br>
 
-        <label for="idActivite">Activité:</label>
-        <select id="idActivite" name="idActivite" required>
+        <label for="idActivite" class="admin-label">Activité:</label>
+        <select id="idActivite" name="idActivite" class="admin-select" required>
             <?php foreach ($activites as $activite) {
                 echo "<option value='" . $activite['id_activite'] . "'>" . htmlspecialchars($activite['nom_activite']) . "</option>";
             } ?>
         </select><br>
 
-        <input type="submit" value="Soumettre le Résultat">
+        <input type="submit" class="admin-btn-submit" value="Soumettre le Résultat">
     </form>
-    <form action="../logout.php" method="post">
-    <button type="submit" class="btn btn-warning">Déconnexion</button>
-</form>
-
+    <form action="../logout.php" method="post" class="admin-form">
+        <button type="submit" class="btn admin-btn-logout">Déconnexion</button>
+    </form>
 </body>
+
 </html>
 
 
