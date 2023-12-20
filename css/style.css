@@ -723,3 +723,49 @@ form {
     margin-top: 20px;
   
 }
+/* **************************************** pour le carousel ******************************************************* */
+
+.carousel-caption {
+    border-radius: 200px;
+    margin-bottom: 20px;
+    background-color: hsla(240, 62%, 36%, 0.62);
+    color: white;
+    
+    border-radius: 50px;
+
+}
+
+.carousel-caption h3 {
+    font-size: 1.5em;
+}
+
+.carousel-caption p {
+    font-size: 1em;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: hsla(240, 62%, 36%);
+    border-radius: 50%;
+    width: 60px; /* Exemple de taille de bouton */
+    height: 60px;  /* Exemple de taille de bouton */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-size: 20px; /* Exemple de taille d'icône */
+    background-repeat: no-repeat;
+    background-position: center;
+}
