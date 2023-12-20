@@ -28,7 +28,7 @@ h3{
 }
 
 
-/* css pr la navbar */
+/* ************************************************* navbar****************************************************** */
 .navbar {
     background-color: #182972;
     height: 100px;
@@ -72,11 +72,12 @@ h3{
 .nav-link:hover, .nav-link.active {
     color: #6a89b4;
 }
+/* Logo  */
 .logo {
     width: 80px; 
-    height: 80px; /* Hauteur du logo */
-    transition: opacity 1s ease; /* Transition douce pour l'opacité */
-    content: url('../img/logo.png'); /* Changez l'image du logo au survol ici */
+    height: 80px;
+    transition: opacity 1s ease; 
+    content: url('../img/logo.png');
   }
   
   .logo:hover {
@@ -84,7 +85,7 @@ h3{
     height: 90px;
   }
   
-/* css pour la navbar responsive */
+/* Responsive */
 @media (min-width: 991px) {
 
     .nav-link::before{
@@ -167,31 +168,43 @@ h3{
 }
 
 
-/* information*/
-.icon {
-    width: 40%;
-    color: #ffffff;
-    padding: 0px;
-
-  }
-  
-  .explication-titre {
-    font-size: 26px;
-    color: #ffffff;
-
-  }
-  
-  .explication-text {
-    font-size: 18px;
-    padding-top: 20px;
-    color: #ffffff;
-    margin-bottom: 5vh;
-  }
-
 .carousel-image {
     height: 50vh;
     width: 50vh;
-    }
+}
+/* carousell */
+.carousel-item{
+    height: 900px;
+    width: 100%;
+}
+    
+    
+/* information*/
+.icon {
+    width: 40%;
+    color: #182972;
+    padding: 0px;
+    
+}
+      
+.explication-titre {
+    font-size: 26px;
+    color: #182972;
+    
+}
+      
+.explication-text {
+    font-size: 18px;
+    padding-top: 20px;
+    color: #182972;
+    margin-bottom: 5vh;
+}
+    
+.container_horaires .horaires {
+    text-align: center;
+    color: #182972;
+    font-family: Poppins;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -329,59 +342,16 @@ form {
     text-align: center;
 }
 
-
-
-
-
-
+/* Responsive  */
 @media screen and (max-width:400px) {
     .form {
         padding: 15px 10px;
     }
 }
-/* fin du css pr la connexion a la page admin */
-
-.carousel-image {
-    height: 50vh;
-    width: 50vh;
-}
-  /* carousell */
-  .carousel-item{
-height: 900px;
-width: 100%;
-  }
 
 
-/* information*/
-.icon {
-    width: 40%;
-    color: #182972;
-    padding: 0px;
-
-  }
-  
-  .explication-titre {
-    font-size: 26px;
-    color: #182972;
-
-  }
-  
-  .explication-text {
-    font-size: 18px;
-    padding-top: 20px;
-    color: #182972;
-    margin-bottom: 5vh;
-  }
-
-  .container_horaires .horaires {
-    text-align: center;
-    color: #182972;
-    font-family: Poppins;
-}
-
-
-/* *********************************PAGE TARIF****************************************** */
-  /* css pr les cartes dans la page tarif */
+/* *********************************PAGE INSCRIPTION****************************************** */
+  /* les cartes */
   #itamsection {
     background-color: #f8f9fa;
     padding: 40px 0;
@@ -475,23 +445,88 @@ width: 100%;
 }
 
 /* **************************************** PAGE PARTENAIRES ******************************************************* */
-/* test pr les partenaire */
 
-
-
+.titre_partenaire{
+    color: #FFF;
+}
 
   .image-arrondie {
     border-radius: 80px 0px 80px 0px; 
     margin-top: 2vh;
-
+    object-fit: contain;
+    width: 100%;
+    height: 200px;
+    background-color: #FFF;
   }
-  .image-arrondie2 {
-    border-radius:  0px 80px  0px 80px; 
-    margin-top: 2vh;
+
+  .page_partenaire{
+    background-color: #00175E;
   }
 
+  .page_partenaire {
+    background-color: #00175E;
+    padding: 0 15px; 
+}
 
-/* **************************************** PAGE ADMIN ******************************************************* */
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    justify-content: center; 
+}
+
+.col-md-6 {
+    flex: 0 0 calc(50% - 10px); 
+    max-width: calc(50% - 10px); 
+    margin: 0;
+}
+
+.card-partner {
+    perspective: 1000px;
+    margin-bottom: 10px; 
+}
+
+.card-partner-inner {
+    width: 100%;
+    height: 200px; 
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card-partner-front, .card-partner-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 80px 0px 80px 0px;
+    overflow: hidden;
+}
+
+.card-partner-back {
+    background: #FFF; 
+    transform: rotateY(180deg);
+    color: #0056b3;
+    padding: 25px; 
+    box-sizing: border-box; 
+}
+
+.card-partner:hover .card-partner-inner {
+    transform: rotateY(180deg);
+}
+
+.card-partner-back h3,
+.card-partner-back p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 1em; 
+}
+
+
+
+/* **************************************** PAGE ADMIN / CONNEXION ******************************************************* */
 
   /* Styles pour les en-têtes d'administration */
 .admin-heading {
@@ -557,16 +592,8 @@ width: 100%;
     margin-right: 5px;
 }
 
-
-
-
-
-
-
-
-
 /* **************************************** PAGE ADMIN ******************************************************* */
-.php{ /* div qui sert a mettre de l'espace entre la navbar et le contenus */
+.espace_navbar{ /* div qui sert a mettre de l'espace entre la navbar et le contenus */
     margin-top: 15vh;
     margin-left: 10vh;
     margin-right: 10vh

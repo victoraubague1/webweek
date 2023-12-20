@@ -140,7 +140,7 @@ try {
             </button>
         </div>
     </nav>
-    <div class="php">
+    <div class="espace_navbar">
     <h1 class="admin-heading">Entrée des Résultats de Match</h1>
     <?php if (isset($message)) echo "<p class='admin-message'>$message</p>"; ?>
 

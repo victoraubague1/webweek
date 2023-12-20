@@ -35,7 +35,7 @@
                             <a class="nav-link mx-lg-2" href="../poo/inscription.php">Inscription</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="../partenaire.php">Partenaire</a>
+                            <a class="nav-link mx-lg-2" href="partenaire.php">Partenaire</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="equipe.php">Equipe</a>
@@ -54,7 +54,7 @@
             </button>
         </div>
     </nav>
-    <div class="php">
+    <div class="espace_navbar">
     <!-- Fin de la navbar -->
     <?php 
 
@@ -73,7 +73,7 @@ try {
 
     foreach ($equipes as $equipe) {
         echo '<div class="row mb-3">';
-        echo '<div class="col-12 text-center"><h2>Équipe ' . $compteurEquipe . ': ' . htmlspecialchars($equipe['nom_equipe']) . '</h2></div>';
+        echo '<div class="col-12 text-center"><h2>Equipe ' . $compteurEquipe . ': ' . htmlspecialchars($equipe['nom_equipe']) . '</h2></div>';
 
 
         // Récupération et affichage des joueurs de l'équipe
