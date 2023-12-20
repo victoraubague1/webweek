@@ -11,20 +11,28 @@
         url(../typo/Poppins.ttf) format(truetype);
 }
 
-body{
+body {
     background-color: rgb(255, 255, 255);
 }
 
-h1{
+h1 {
     font-family: Koulen;
 }
-h2{
+
+h2 {
     font-family: Koulen;
     color: #182972;
 }
-h3{
+
+h3 {
     font-family: Poppins;
     font-size: larger;
+}
+
+h4 {
+    font-family: Koulen;
+    font-size: x-large;
+    color: #182972;
 }
 
 
@@ -44,8 +52,8 @@ h3{
 
 
 /* espacement de la navbar */
-.navbar-nav .nav-item  {
-    margin-left: 1%; 
+.navbar-nav .nav-item {
+    margin-left: 1%;
     margin-right: 1%;
 
 }
@@ -55,7 +63,8 @@ h3{
     font-size: 1.25rem;
 }
 
-.navbar-toggler:focus, .btn-close:focus {
+.navbar-toggler:focus,
+.btn-close:focus {
     box-shadow: none;
     outline: none;
 }
@@ -66,12 +75,14 @@ h3{
     font-weight: 699;
     font-weight: bold;
     position: relative;
-    
+
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: #6a89b4;
 }
+
 /* Logo  */
 .logo {
     width: 80px; 
@@ -86,9 +97,10 @@ h3{
   }
   
 /* Responsive */
+
 @media (min-width: 991px) {
 
-    .nav-link::before{
+    .nav-link::before {
         content: "";
         position: absolute;
         bottom: 0;
@@ -101,23 +113,25 @@ h3{
         transition: 0.3s ease-in-out;
     }
 
-    .nav-link:hover::before, .nav-link.active::before {
+    .nav-link:hover::before,
+    .nav-link.active::before {
         width: 100%;
         visibility: visible;
     }
-   
+
 }
 
 /* ************************************************* PAGE EQUIPE *************************************************** */
- /* pour les cartes des joueurs */
-.card img{
+/* pour les cartes des joueurs */
+.card img {
     height: 100%;
     width: 100%;
 }
+
 /* pour la taille */
 .max-width-50 {
     max-width: 50%;
-    margin: auto; 
+    margin: auto;
 }
 
 /* *************************************************** PAGE D ACCUEIL************************************************ */
@@ -126,32 +140,32 @@ h3{
 .jumbotron-custom {
     background: url('/webweek/img/dalle.png') no-repeat center center;
     background-size: cover;
-    height: 120vh ;
+    height: 120vh;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-shadow: 2px 2px 4px #182972;
-    padding-top: 80px; 
+    padding-top: 80px;
 }
 
 /* Style du conteneur de texte sur l'image de la page d'accueil */
 .text-background {
     margin-top: 9%;
-    text-align: left; 
-    max-width: 30%; 
-    position: absolute; 
-    left: 3.5%; 
+    text-align: left;
+    max-width: 30%;
+    position: absolute;
+    left: 3.5%;
 }
 
 /* Style du titre sur l'image */
 .text-background h1 {
-    background-color: hsla(240, 62%, 36%, 0.82); 
-    padding: 0.5em 1em; 
-    border-radius: 0.25em; 
-    margin-bottom: 0.5em; 
-    display: inline-block; 
+    background-color: hsla(240, 62%, 36%, 0.82);
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    margin-bottom: 0.5em;
+    display: inline-block;
     font-size: 2.5em;
 }
 
@@ -161,17 +175,57 @@ h3{
 .text-background .lead {
     font-size: larger;
     background-color: hsla(240, 62%, 36%, 0.82);
-    padding: 0.5em 1em; 
-    border-radius: 0.25em; 
-    display: inline-block; 
-    
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    display: inline-block;
+
 }
+
+
 
 
 .carousel-image {
     height: 50vh;
     width: 50vh;
 }
+
+
+.evenement1 {
+    background-color: #c7d9f3;
+}
+
+.Avertissement {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: #182972;
+}
+
+.Gauche,.Droite {
+    display: inline-block;
+    text-align: left;
+    width: 49%;
+    /* Ajustez la largeur en fonction de vos besoins */
+}
+
+#jeminscris {
+    background-color: #182972;
+    color: #ffffff;
+    border: none;
+    padding: 15px 70px; /* Augmente la taille du bouton */
+    border-radius: 15px;
+    font-family: Koulen;
+    font-size: x-large;
+}
+
+#jeminscris:hover {
+    background-color: #c7d9f3;
+    color: #182972;
+}
+
+.deroulement {
+    background-color: #c7d9f3;
+
 /* carousell */
 .carousel-item{
     height: 900px;
@@ -209,20 +263,25 @@ h3{
 /* Responsive */
 @media (max-width: 768px) {
     .jumbotron-custom {
-        margin-top: 60px; /* Marge supérieure plus petite */
-        height: 40vh; 
+        margin-top: 60px;
+        /* Marge supérieure plus petite */
+        height: 40vh;
     }
 
     .text-background {
-        left: 10%; /* Moins d'espace sur les côtés pour les petits écrans */
+        left: 10%;
+        /* Moins d'espace sur les côtés pour les petits écrans */
         transform: translate(-10%, -50%);
-        width: 80%; /* Largeur plus grande pour le texte sur les petits écrans */
+        width: 80%;
+        /* Largeur plus grande pour le texte sur les petits écrans */
     }
 
-    .text-background h1, .text-background .lead {
-        display: block; 
-        padding: 0.5em; 
-        font-size: smaller; /* Police plus petite sur les petits écrans */
+    .text-background h1,
+    .text-background .lead {
+        display: block;
+        padding: 0.5em;
+        font-size: smaller;
+        /* Police plus petite sur les petits écrans */
     }
 }
 
@@ -234,7 +293,7 @@ h3{
     --color-secondary: #232836;
     --color-third: #ececec;
 
-    --color-white:#fff;
+    --color-white: #fff;
 
     --text-color: #222;
     --body-color: #d3f3db;
@@ -242,8 +301,8 @@ h3{
     --main-transition: all .3s ease;
 }
 
-*{
-  
+* {
+
     font-family: 'Poppins', sans-serif;
 }
 
@@ -350,18 +409,20 @@ form {
 }
 
 
+
 /* *********************************PAGE INSCRIPTION****************************************** */
   /* les cartes */
   #itamsection {
     background-color: #f8f9fa;
     padding: 40px 0;
-  }
+}
 
-  .itam {
+.itam {
     color: #00175E;
-  }
- #itamsection .card {
-    margin-top: 90px; 
+}
+
+#itamsection .card {
+    margin-top: 90px;
     border-radius: 10px;
 }
 
@@ -384,7 +445,7 @@ form {
     font-family: "Koulen";
 }
 
-.button_inscription:hover{
+.button_inscription:hover {
     background: #052175;
     color: #FFF;
 }
@@ -396,20 +457,20 @@ form {
     padding: 3%;
 }
 
-.formulaire_insc h1{
+.formulaire_insc h1 {
     font-family: "Koulen";
 }
 
 .form-group {
     background-color: #3D5695;
     border-radius: 35px;
-    margin-top: 15px; 
+    margin-top: 15px;
     max-width: 800px;
     color: #FFF;
     font-size: 20px;
 }
 
-.form-group input{
+.form-group input {
     background-color: #3D5695;
     border: none;
     height: 45px;
@@ -422,16 +483,16 @@ form {
     font-size: 20px;
 }
 
-.btn-inscription{
+.btn-inscription {
     width: 300px;
     height: 50px;
-    background-color:#00175E;
+    background-color: #00175E;
     border: none;
-    border-radius:35px;
+    border-radius: 35px;
     margin-top: 2%;
     color: #FFF;
     padding-left: 1%;
-    padding-right:1% ;
+    padding-right: 1%;
     font-size: 25px;
     font-family: "Koulen";
     font-size: 25px;
@@ -439,8 +500,8 @@ form {
     width: 300px;
 }
 
-.btn-inscription:hover{
-    background-color:#052175; 
+.btn-inscription:hover {
+    background-color: #052175;
     color: #FFF;
 }
 
@@ -450,8 +511,8 @@ form {
     color: #FFF;
 }
 
-  .image-arrondie {
-    border-radius: 80px 0px 80px 0px; 
+.image-arrondie {
+    border-radius: 80px 0px 80px 0px;
     margin-top: 2vh;
     object-fit: contain;
     width: 100%;
@@ -528,9 +589,9 @@ form {
 
 /* **************************************** PAGE ADMIN / CONNEXION ******************************************************* */
 
-  /* Styles pour les en-têtes d'administration */
+/* Styles pour les en-têtes d'administration */
 .admin-heading {
-   margin-top: 200;
+    margin-top: 200;
     font-family: Koulen, sans-serif;
     color: #182972;
     text-align: center;
@@ -560,13 +621,15 @@ form {
     margin-top: 20px;
     padding: 10px;
 }
+
 .admin-form legend {
     font-weight: bold;
     padding: 5px;
 }
 
 /* Styles pour les boutons d'administration */
-.admin-form input[type=submit], .admin-btn-logout {
+.admin-form input[type=submit],
+.admin-btn-logout {
     background-color: #182972;
     color: white;
     padding: 10px 15px;
@@ -575,12 +638,15 @@ form {
     cursor: pointer;
     margin-top: 20px;
 }
-.admin-form input[type=submit]:hover, .admin-btn-logout:hover {
+
+.admin-form input[type=submit]:hover,
+.admin-btn-logout:hover {
     background-color: #0f1b5a;
 }
 
 /* Styles pour les sélecteurs et checkboxes dans les formulaires d'administration */
-.admin-form select, .admin-form input[type=number] {
+.admin-form select,
+.admin-form input[type=number] {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
@@ -588,14 +654,147 @@ form {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
 .admin-form input[type=checkbox] {
     margin-right: 5px;
 }
 
 /* **************************************** PAGE ADMIN ******************************************************* */
+
 .espace_navbar{ /* div qui sert a mettre de l'espace entre la navbar et le contenus */
     margin-top: 15vh;
     margin-left: 10vh;
     margin-right: 10vh
- }
+}
 
+
+/* **************************************** PAGE tarif carte ******************************************************* */
+
+
+ /* Styles personnalisés pour la page de tarifs */
+
+.tarif {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+/* Styles pour les cartes */
+.card-custom {
+    border-radius: 15px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    background-color: #e9ecef;
+    width: 20rem; 
+    margin: 0 auto; /* Centrage de la carte */
+}
+
+.card-custom:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-header-custom {
+    background-color: hsla(240, 62%, 36%, 0.82);
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px 15px;
+    font-size: 1.25em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-body-custom {
+    padding: 20px; 
+}
+
+/* Styles pour le texte des tarifs et des tranches d'âge */
+.tarif-text {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.tranche-age-text {
+    margin-bottom: 25px;
+    font-size: 1.25em;
+}
+
+/* Styles pour les boutons */
+.btn-custom {
+    width: 65%;
+    margin: 0 auto; /* Centrage du bouton */
+    display: block;
+    background-color: rgb(72, 38, 210);
+    color: white;
+    font-size: 1em;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.btn-custom:hover {
+    background-color: hsla(240, 62%, 36%, 0.95);
+    color: white;
+}
+
+/* Responsive design avec Bootstrap */
+@media (max-width: 1008px) {
+    .card-custom {
+        width: 70%; /* Pleine largeur sur les petits écrans */
+    }
+
+    .btn-custom {
+        width: 50%; /* Largeur plus large pour le bouton sur les petits écrans */
+    }
+}
+
+.espacetarif{
+    margin-top: 20px;
+  
+}
+/* **************************************** pour le carousel ******************************************************* */
+
+.carousel-caption {
+    border-radius: 200px;
+    margin-bottom: 20px;
+    background-color: hsla(240, 62%, 36%, 0.62);
+    color: white;
+    
+    border-radius: 50px;
+
+}
+
+.carousel-caption h3 {
+    font-size: 1.5em;
+}
+
+.carousel-caption p {
+    font-size: 1em;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: hsla(240, 62%, 36%);
+    border-radius: 50%;
+    width: 60px; /* Exemple de taille de bouton */
+    height: 60px;  /* Exemple de taille de bouton */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-size: 20px; /* Exemple de taille d'icône */
+    background-repeat: no-repeat;
+    background-position: center;
+}
