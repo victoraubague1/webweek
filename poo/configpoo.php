@@ -3,7 +3,7 @@
 class Config {
     private $host = 'localhost';
     private $dbUser = 'root';
-    private $dbPassword = '';
+    private $dbPassword = 'root';
     private $dbName = 'ski';
     private $conn;
 
