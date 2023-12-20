@@ -80,41 +80,40 @@
 <div id="php"> </div>
 
 
-<section id="itamsection">
-<div class="container">
-    <h2 class="itam text-center mb-4">TARIFS</h2>
-    <div class="row">
-        <?php 
-            include '../php/config.php';
+<div class="tarif">
+ <div class="row justify-content-center">
+            <?php
+            include 'configpoo.php';
+            $config = new Config();
+            $conn = $config->connect();
 
             try {
-                $conn = new PDO("mysql:host=$host;dbname=$dbName", $dbUser, $dbPassword);
-                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-                $stmt = $conn->prepare("SELECT categorie, tarif FROM groupe");
+                $stmt = $conn->prepare("SELECT * FROM groupe");
                 $stmt->execute();
                 $tarifs = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+      
                 foreach ($tarifs as $tarif) {
-                    $categ = htmlspecialchars($tarif['categorie']);
-                    $prix = htmlspecialchars($tarif['tarif']);
-                    echo "<div class='col-md-4 mb-4'>";
-                    echo "    <div class='card' style='width: 18rem;'>";
-                    echo "        <img src='../img/logo1.png' class='card-img-top' alt='test'>";
-                    echo "        <div class='card-body'>";
-                    echo "            <h5 class='card-title'>$categ</h5>";
-                    echo "            <p class='card-text'>$prix € / an</p>";
-                    echo "            <a href='#' class='btn btn-primary'>S'inscrire</a>";
+                    echo "<div class='col-md-4 col-tarif'>";
+                    echo "    <div class='card card-custom tarif-card mb-4'>";
+                    echo "        <div class='card-header card-header-custom tarif-header text-center'>";
+                    echo              htmlspecialchars($tarif['categorie']);
                     echo "        </div>";
-                    echo "    </div>";
-                    echo "</div>";
+                    echo "        <div class='card-body card-body-custom tarif-body'>";
+                    echo "            <p class='tarif-text'>" . htmlspecialchars($tarif['tarif']) . " €</p>";
+                    echo "            <p class='tranche-age-text'>" . htmlspecialchars($tarif['tranche_age']) . "</p>";
+                    echo "            <a href='inscription.php?tarif=" . urlencode($tarif['id_groupe']) . "' class='btn btn-custom tarif-btn'>Je m'inscris</a>";
+                    echo "            <p class='espacetarif'>*Prix par personne</p>";
+                    echo "        </div>"; 
+                    echo "    </div>"; 
+                    echo "</div>"; 
                 }
             } catch(PDOException $e) {
-                echo "Connection failed: " . $e->getMessage();
+                echo "Error: " . $e->getMessage();
             }
-        ?>
-    </div>
-</div>
+            ?>
+        </div>
+        </div>
+    <section id="itamsection">
 <!-- Plus d'info programme -->
 <div class="row">
     <div class="col-md-12">
