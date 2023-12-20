@@ -642,54 +642,82 @@ form {
 /* **************************************** PAGE tarif carte ******************************************************* */
 
 
- .card-custom {
+ /* Styles personnalisés pour la page de tarifs */
+
+.tarif {
+    padding: 20px;
+}
+
+/* Styles pour les cartes */
+.card-custom {
     border-radius: 15px;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
     background-color: #e9ecef;
-
     width: 20rem; 
+    margin: 0 auto; /* Centrage de la carte */
 }
+
 .card-custom:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .card-header-custom {
-    background-color: hsla(240, 62%, 36%, 0.82); /* Couleur de fond avec opacité */
+    background-color: hsla(240, 62%, 36%, 0.82);
     color: white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     padding: 10px 15px;
     font-size: 1.25em;
     font-weight: 700;
+    text-align: center;
 }
+
 .card-body-custom {
     padding: 20px; 
 }
+
+/* Styles pour le texte des tarifs et des tranches d'âge */
+.tarif-text {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.tranche-age-text {
+    margin-bottom: 25px;
+    font-size: 1.25em;
+}
+
+/* Styles pour les boutons */
 .btn-custom {
     width: 65%;
-    margin-right: 17%;
-    margin-left: 17%;
-    background-color:rgb(72, 38, 210);;
-  
+    margin: 0 auto; /* Centrage du bouton */
+    display: block;
+    background-color: rgb(72, 38, 210);
     color: white;
     font-size: 1em;
     padding: 10px 25px;
     border-radius: 8px;
     transition: all 0.2s;
 }
+
 .btn-custom:hover {
-    background-color: hsla(240, 62%, 36%, 0.95); /* Couleur de fond avec opacité */
-  color: white;
+    background-color: hsla(240, 62%, 36%, 0.95);
+    color: white;
 }
-.tarif-text {
-    font-size: 2em;
-    font-weight: 700;
-    margin-bottom: 15px;
+
+/* Responsive design avec Bootstrap */
+@media (max-width: 1008px) {
+    .card-custom {
+        width: 70%; /* Pleine largeur sur les petits écrans */
+    }
+
+    .btn-custom {
+        width: 50%; /* Largeur plus large pour le bouton sur les petits écrans */
+    }
 }
-.tranche-age-text {
-    margin-bottom: 25px;
-    font-size: 1.25em;
-}
+
 .espacetarif{
     margin-top: 20px;
   
