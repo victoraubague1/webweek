@@ -20,6 +20,11 @@ h1{
 }
 h2{
     font-family: Koulen;
+    color: #182972;
+}
+h3{
+    font-family: Poppins;
+    font-size: larger;
 }
 
 
@@ -70,12 +75,13 @@ h2{
 .logo {
     width: 80px; 
     height: 80px; /* Hauteur du logo */
-    transition: opacity 0.3s ease; /* Transition douce pour l'opacité */
+    transition: opacity 1s ease; /* Transition douce pour l'opacité */
     content: url('../img/logo.png'); /* Changez l'image du logo au survol ici */
   }
   
   .logo:hover {
-    content: url('https://sothebys-md.brightspotcdn.com/dims4/default/29b58a0/2147483647/strip/true/crop/2000x2000+0+0/resize/385x385!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F7e%2Fb9%2Fd2b6288a4a2b86b72e75ded01e35%2F730sneakers-c7drw-t3-04.jpg'); /* Changez l'image du logo au survol ici */
+    width: 90px; 
+    height: 90px;
   }
   
 /* css pour la navbar responsive */
@@ -125,7 +131,7 @@ h2{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px #182972;
     padding-top: 80px; 
 }
 
@@ -349,23 +355,30 @@ width: 100%;
 /* information*/
 .icon {
     width: 40%;
-    color: #ffffff;
+    color: #182972;
     padding: 0px;
 
   }
   
   .explication-titre {
     font-size: 26px;
-    color: #ffffff;
+    color: #182972;
 
   }
   
   .explication-text {
     font-size: 18px;
     padding-top: 20px;
-    color: #ffffff;
+    color: #182972;
     margin-bottom: 5vh;
   }
+
+  .container_horaires .horaires {
+    text-align: center;
+    color: #182972;
+    font-family: Poppins;
+}
+
 
 /* *********************************PAGE TARIF****************************************** */
   /* css pr les cartes dans la page tarif */
