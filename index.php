@@ -28,7 +28,7 @@
                     <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
 
                         <li class="nav-item">
-                            <div class="logo"><a href="../index.php"></a></div>
+                            <div class="logo"></div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="poo/inscription.php">Inscription</a>
@@ -106,7 +106,9 @@
         <br><br><br>
         <p id="gris">L’association décline toute responsabilité en cas de vol !</p>
         <br>
+        <form action="./poo/inscription.php">
         <button id="jeminscris">JE M'INSCRIS</button>
+        </form>
     </section>
     </div>
     <br>
@@ -154,7 +156,7 @@
             </div><br>
             <div class="horaires">
                 <h3>11h Épreuves</h3>
-                <p>Les différents niveaux passeront sur les parcours, les arbitres prennent en compte les points et le résultat</p>
+                <p>Les différents niveaux passeront sur les parcours, les arbitres prennent en compte les points et calculent le résultat</p>
             </div><br>
             <div class="horaires">
                 <h3>12h Pause Repas</h3>

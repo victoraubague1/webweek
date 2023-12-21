@@ -26,7 +26,6 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
-
                         <li class="nav-item">
                             <div class="logo"> </div>
                         </li>
