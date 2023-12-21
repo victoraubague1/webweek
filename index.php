@@ -34,7 +34,7 @@
                             <a class="nav-link mx-lg-2" href="poo/inscription.php">Inscription</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="php/partenaire.php">Partenaire</a>
+                            <a class="nav-link mx-lg-2" href="php/partenaire.php">Partenaire</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="php/equipe.php">Equipe</a>
@@ -58,8 +58,8 @@
     <section class="jumbotron jumbotron-fluid jumbotron-custom">
         <div class="container text-center">
             <div class="text-background">
-                <h1 class="display-4">Puy-lympique d'hiver</h1>
-                <p class="lead">Sur la glace, le ballon trace : Puy-lympiques d'hiver, l'equipe du Puy Foot en lumiere !</p>
+                <h1 class="display-4">Puy-lympiades d'hiver</h1>
+                <p class="lead">Sur la glace, le ballon trace : Puy-lympiades d'hiver, l'equipe du Puy Foot en lumiere !</p>
             </div>
         </div>
     </section>

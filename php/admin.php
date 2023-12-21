@@ -63,26 +63,8 @@ try {
     exit;
 }
 ?>
-
-<link href="../css/style.css" rel="stylesheet">
-
-
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Administration - Entrée des Résultats de Match</title>
-
-    <link href="../css/style.css" rel="stylesheet">
-
-</head>
-
-<body>
-
     <!DOCTYPE html>
     <html lang="fr">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -50,9 +50,11 @@
             </button>
         </div>
     </nav>
-    <div class="php">
-        <!-- Fin de la navbar -->
-        <?php
+
+    <div class="espace_navbar">
+    <!-- Fin de la navbar -->
+    <?php 
+
 
         include '../php/config.php';
 
@@ -67,9 +69,11 @@
 
             $compteurEquipe = 1; // Initialisation du compteur d'équipe
 
+
             foreach ($equipes as $equipe) {
                 echo '<div class="row mb-3">';
                 echo '<div class="col-12 text-center"><h2>Équipe ' . $compteurEquipe . ': ' . htmlspecialchars($equipe['nom_equipe']) . '</h2></div>';
+
 
 
                 // Récupération et affichage des joueurs de l'équipe
