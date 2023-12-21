@@ -222,6 +222,7 @@
             </div>
         </div>
     </div>
+</ul>
 </main>
 </body>
 </html>
