@@ -35,8 +35,8 @@ h4 {
     color: #182972;
 }
 
-
 /* ************************************************* navbar****************************************************** */
+
 .navbar {
     background-color: #182972;
     height: 100px;
@@ -49,7 +49,6 @@ h4 {
     font-size: 24px;
     transition: 0.3s color;
 }
-
 
 /* espacement de la navbar */
 .navbar-nav .nav-item {
@@ -169,7 +168,6 @@ h4 {
     font-size: 2.5em;
 }
 
-
 /* Sous-titre (lead) */
 
 .text-background .lead {
@@ -182,6 +180,27 @@ h4 {
 }
 
 
+/* information*/
+.icon {
+    width: 4vw;
+    color: #ffffff;
+    padding: 0px;
+
+}
+
+.explication-titre {
+    font-size: 26px;
+    color: #ffffff;
+
+}
+
+
+
+
+
+#gris {
+    color: #6a89b4;
+}
 
 
 .carousel-image {
@@ -201,7 +220,8 @@ h4 {
     color: #182972;
 }
 
-.Gauche,.Droite {
+.Gauche,
+.Droite {
     display: inline-block;
     text-align: left;
     width: 49%;
@@ -212,7 +232,8 @@ h4 {
     background-color: #182972;
     color: #ffffff;
     border: none;
-    padding: 15px 70px; /* Augmente la taille du bouton */
+    padding: 15px 70px;
+    /* Augmente la taille du bouton */
     border-radius: 15px;
     font-family: Koulen;
     font-size: x-large;
@@ -410,6 +431,39 @@ form {
 
 
 
+.carousel-image {
+    height: 50vh;
+    width: 50vh;
+}
+
+/* carousell */
+.carousel-item {
+    height: 900px;
+    width: 100%;
+}
+
+/* information*/
+.icon {
+    width: 40%;
+    color: #182972;
+    padding: 0px;
+
+}
+
+.explication-titre {
+    font-size: 26px;
+    color: #182972;
+
+}
+
+.container_horaires .horaires {
+    text-align: center;
+    color: #182972;
+    font-family: Poppins;
+}
+
+
+
 /* *********************************PAGE INSCRIPTION****************************************** */
   /* les cartes */
   #itamsection {
@@ -507,6 +561,7 @@ form {
 
 /* **************************************** PAGE PARTENAIRES ******************************************************* */
 
+
 .titre_partenaire{
     color: #FFF;
 }
@@ -535,6 +590,8 @@ form {
     gap: 10px; 
     justify-content: center; 
 }
+
+/* **************************************** PAGE ADMIN ******************************************************* */
 
 .col-md-6 {
     flex: 0 0 calc(50% - 10px); 
@@ -588,6 +645,7 @@ form {
 
 
 /* **************************************** PAGE ADMIN / CONNEXION ******************************************************* */
+
 
 /* Styles pour les en-têtes d'administration */
 .admin-heading {
@@ -660,6 +718,13 @@ form {
 }
 
 /* **************************************** PAGE ADMIN ******************************************************* */
+
+.php {
+    /* div qui sert a mettre de l'espace entre la navbar et le contenus */
+    margin-top: 15vh;
+    margin-left: 10vh;
+    margin-right: 10vh
+}
 
 .espace_navbar{ /* div qui sert a mettre de l'espace entre la navbar et le contenus */
     margin-top: 15vh;
@@ -798,3 +863,4 @@ form {
     background-repeat: no-repeat;
     background-position: center;
 }
+
