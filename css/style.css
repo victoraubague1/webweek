@@ -35,7 +35,6 @@ h4 {
     color: #182972;
 }
 
-
 /* css pr la navbar */
 .navbar {
     background-color: #182972;
@@ -49,7 +48,6 @@ h4 {
     font-size: 24px;
     transition: 0.3s color;
 }
-
 
 /* espacement de la navbar */
 .navbar-nav .nav-item {
@@ -170,7 +168,6 @@ h4 {
     font-size: 2.5em;
 }
 
-
 /* Sous-titre (lead) */
 
 .text-background .lead {
@@ -181,7 +178,6 @@ h4 {
     display: inline-block;
 
 }
-
 
 /* information*/
 .icon {
@@ -207,6 +203,7 @@ h4 {
 #gris {
     color: #6a89b4;
 }
+
 .carousel-image {
     height: 50vh;
     width: 50vh;
@@ -223,7 +220,8 @@ h4 {
     color: #182972;
 }
 
-.Gauche,.Droite {
+.Gauche,
+.Droite {
     display: inline-block;
     text-align: left;
     width: 49%;
@@ -234,7 +232,8 @@ h4 {
     background-color: #182972;
     color: #ffffff;
     border: none;
-    padding: 15px 70px; /* Augmente la taille du bouton */
+    padding: 15px 70px;
+    /* Augmente la taille du bouton */
     border-radius: 15px;
     font-family: Koulen;
     font-size: x-large;
@@ -394,7 +393,6 @@ form {
 
 
 
-
 @media screen and (max-width:400px) {
     .form {
         padding: 15px 10px;
@@ -414,7 +412,6 @@ form {
     width: 100%;
 }
 
-
 /* information*/
 .icon {
     width: 40%;
@@ -429,13 +426,11 @@ form {
 
 }
 
-
 .container_horaires .horaires {
     text-align: center;
     color: #182972;
     font-family: Poppins;
 }
-
 
 /* *********************************PAGE TARIF****************************************** */
 /* css pr les cartes dans la page tarif */
@@ -537,7 +532,6 @@ form {
 
 
 
-
 .image-arrondie {
     border-radius: 80px 0px 80px 0px;
     margin-top: 2vh;
@@ -548,7 +542,6 @@ form {
     border-radius: 0px 80px 0px 80px;
     margin-top: 2vh;
 }
-
 
 /* **************************************** PAGE ADMIN ******************************************************* */
 
@@ -621,13 +614,6 @@ form {
 .admin-form input[type=checkbox] {
     margin-right: 5px;
 }
-
-
-
-
-
-
-
 
 
 /* **************************************** PAGE ADMIN ******************************************************* */
