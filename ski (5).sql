@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 22 déc. 2023 à 08:08
+-- Généré le : ven. 22 déc. 2023 à 11:51
 -- Version du serveur : 10.4.28-MariaDB
--- Version de PHP : 8.0.28
+-- Version de PHP : 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -63,6 +63,7 @@ CREATE TABLE `activite_equipe` (
 
 INSERT INTO `activite_equipe` (`id_activite`, `id_equipe`, `heure`) VALUES
 (2, 19, '05:32:00'),
+(3, 17, '06:58:00'),
 (3, 18, '05:23:00'),
 (3, 19, '03:27:00');
 
@@ -107,9 +108,9 @@ CREATE TABLE `groupe` (
 --
 
 INSERT INTO `groupe` (`id_groupe`, `categorie`, `tarif`, `tranche_age`) VALUES
-(1, 'National', 20.00, '17-19 ans'),
-(2, 'District', 10.00, '22-25 ans'),
-(3, 'Régional', 20.00, '22-25 ans');
+(1, 'National', 20.00, '45 - 70 an'),
+(2, 'District', 10.00, '12 - 18 an'),
+(3, 'Régional', 20.00, '18 - 45 an');
 
 -- --------------------------------------------------------
 
