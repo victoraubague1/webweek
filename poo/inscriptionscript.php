@@ -1,48 +1,38 @@
-
 <?php
+// Inclure les fichiers de configuration et de classe sinon sa marche aps
 include 'configpoo.php';
 include 'participant.php';
 
 $configInstance = new Config();
 $db = $configInstance->connect();
 
-$participant = new Participant($db);
+function insertNewTeam($db, $nom_equipe, $id_groupe) {
+    $stmt = $db->prepare("INSERT INTO equipe (nom_equipe, id_groupe) VALUES (?, ?)");
+    $stmt->execute([$nom_equipe, $id_groupe]);
+    return $db->lastInsertId(); 
+}
+
+function insertParticipant($db, $nom, $prenom, $age, $id_equipe) {
+    $participant = new Participant($db);
+    return $participant->insert($nom, $prenom, $age, null, $id_equipe);
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Clean and validate the input data
-    $nom = filter_input(INPUT_POST, 'nom', FILTER_SANITIZE_STRING);
-    $prenom = filter_input(INPUT_POST, 'prenom', FILTER_SANITIZE_STRING);
-    $age = filter_input(INPUT_POST, 'age', FILTER_VALIDATE_INT);
-    $id_equipe = filter_input(INPUT_POST, 'id_equipe', FILTER_VALIDATE_INT);
+    $nom_equipe = $_POST['nom_equipe'];
+    $id_groupe = $_POST['id_groupe'];
 
-    // Additional validation can be done here
-    if (!$nom || !$prenom || !$age || !$id_equipe) {
-        // One of the validations failed. Handle the error here.
-        exit('Validation of data failed. All fields are required.');
-    }
+    
+    $id_equipe = insertNewTeam($db, $nom_equipe, $id_groupe);
 
-    // Handle the photo upload
-    $photo = null;
-    if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK) {
-        $uploadDir = '/path/to/upload/directory/'; // This path should be updated to the correct upload directory
-        $tmpName = $_FILES['photo']['tmp_name'];
-        $fileName = basename($_FILES['photo']['name']);
-        $uploadFilePath = $uploadDir . $fileName;
-        
-        // You should add file type checking and validation here
+   
+    $result1 = insertParticipant($db, $_POST['nom1'], $_POST['prenom1'], $_POST['age1'], $id_equipe);
+    $result1 = insertParticipant($db, $_POST['nom2'], $_POST['prenom2'], $_POST['age2'], $id_equipe);
+    $result1 = insertParticipant($db, $_POST['nom3'], $_POST['prenom3'], $_POST['age3'], $id_equipe);
 
-        if (move_uploaded_file($tmpName, $uploadFilePath)) {
-            $photo = $uploadFilePath;
-        }
-    }
-
-    // Insert the participant data into the database
-    $insertionResult = $participant->insert($nom, $prenom, $age, $photo, $id_equipe);
-
-    if ($insertionResult) {
-        echo "Participant registered successfully.";
+    if ($result1 ) {
+        header("Location: ../php/equipe.php"); 
     } else {
-        echo "Failed to register participant.";
+        header("Location: inscription.php"); 
     }
 }
 ?>
