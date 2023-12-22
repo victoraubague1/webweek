@@ -34,7 +34,7 @@ t
                             <a class="nav-link mx-lg-2" href="../poo/inscription.php">Inscription</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="../php/partenaire.php">Partenaire</a>
+                        <a class="nav-link mx-lg-2" href="../php/partenaire.html">Partenaires</a>
                         </li>
                         <li class="nav-item">
                         </li>
@@ -233,7 +233,7 @@ t
                         <a class="nav-item" href="../poo/inscription.php">Inscription</a>
                         <a class="nav-item" href="equipe.php">Equipe</a>
                         <a class="nav-item" href="resultat.php">Classement</a>
-                        <a class="nav-item" href="partenaire.html">Partenaire</a>
+                        <a class="nav-item" href="partenaire.html">Partenaires</a>
                     </nav>
                 </div>
                 <div class="col-md-4">

@@ -1,5 +1,5 @@
 <?php
-// Inclure les fichiers de configuration et de classe sinon sa marche aps
+// Inclure les fichiers de configuration et de classe sinon sa marche pas
 include 'configpoo.php';
 include 'participant.php';
 

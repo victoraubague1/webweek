@@ -36,7 +36,7 @@
                                 <a class="nav-link mx-lg-2" href="../poo/inscription.php">Inscription</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="../php/partenaire.html">Partenaire</a>
+                                <a class="nav-link mx-lg-2" href="../php/partenaire.html">Partenaires</a>
                             </li>
                             <li class="nav-item">
 

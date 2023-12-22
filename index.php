@@ -29,7 +29,7 @@
 								<div class="logo"></div>
 						</li>
 						<li class="nav-item"><a class="nav-link mx-lg-2" href="poo/inscription.php">Inscription</a></li>
-						<li class="nav-item"><a class="nav-link mx-lg-2" href="php/partenaire.html">Partenaire</a></li>
+						<li class="nav-item"><a class="nav-link mx-lg-2" href="php/partenaire.html">Partenaires</a></li>
 						<li class="nav-item"></li>
 						<li class="nav-item"><a class="nav-link mx-lg-2" href="php/equipe.php">Equipe</a></li>
 						<li class="nav-item"><a class="nav-link mx-lg-2" href="php/resultat.php">Classement</a></li>
